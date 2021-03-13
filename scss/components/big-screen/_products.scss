@@ -11,29 +11,33 @@
     
     .producto{
         width: 100%;
-        min-height: 20em;
+        min-height: 15em;
         border-radius: 2%;
         position: relative;
         z-index: 1;
     }
     
-    .sabores{
-        @include texto (1.3em, $third, center, normal, bold, $lato);
-        @include position (relative, -27%, none, none, none, 2);
-        padding: 5% 0% 6% 0%;
-        background-color: $bg-color-two;
-    }
+
+
+
+
+    // .sabores{
+    //     @include texto (1.3em, $third, center, normal, bold, $lato);
+    //     @include position (relative, -27%, none, none, none, 2);
+    //     padding: 5% 0% 6% 0%;
+    //     background-color: $bg-color-two;
+    // }
     
-    .boton-produc{
-        @include box-model(3% 0% 0% 0%, -23% 0% 0% 0%, 100%, 9vh);
-        @include texto (1.3em, $buttons1, center, normal, bold, $lato);
-        @include position (relative, none, none, none, none, 3);
-        align-items: center;
-        background-color:  $bg-color-two;
-    }
+    // .boton-produc{
+    //     @include box-model(3% 0% 0% 0%, -23% 0% 0% 0%, 100%, 9vh);
+    //     @include texto (1.3em, $buttons1, center, normal, bold, $lato);
+    //     @include position (relative, none, none, none, none, 3);
+    //     align-items: center;
+    //     background-color:  $bg-color-two;
+    // }
     
-    .boton-produc:hover{
-        background-color: $buttons1;
-        color: $font-color;
-        transition: 0.6s;
-    }
+    // .boton-produc:hover{
+    //     background-color: $buttons1;
+    //     color: $font-color;
+    //     transition: 0.6s;
+    // }
