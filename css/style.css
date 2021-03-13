@@ -1408,6 +1408,9 @@ body {
     width: 64vh;
     height: 70vh;
     border-radius: 3px;
+    -webkit-box-shadow: 11px 15px 10px -3px #333333;
+    -moz-box-shadow: 11px 15px 10px -3px #333333;
+    box-shadow: 11px 15px 10px -3px #333333;
   }
 
   /*Pie de pagina*/
@@ -2100,6 +2103,9 @@ body {
     width: 64vh;
     height: 70vh;
     border-radius: 3px;
+    -webkit-box-shadow: 11px 15px 10px -3px #333333;
+    -moz-box-shadow: 11px 15px 10px -3px #333333;
+    box-shadow: 11px 15px 10px -3px #333333;
   }
 
   /*Pie de pagina*/
