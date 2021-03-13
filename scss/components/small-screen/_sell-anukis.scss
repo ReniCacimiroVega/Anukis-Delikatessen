@@ -1,0 +1,81 @@
+/*Vender Anukis*/
+    .vender{
+        @include background (130% 160%, none, 100%, url("../imagenes/fondos/fondo-vender3.jpg"));
+        margin-top: -10%;
+    }
+    
+    .section-vender{
+        @include grid ( 100%, 100%, center, center, none, none);
+        height: 85vh;
+        width: 100%;
+    }
+    
+    .div-h4-vender{
+        @include flexbox (center, center, normal);
+        margin: 0% 0% 0% 0%;
+    }
+    
+    .h4uno{
+        @include box-model( 3% 3% 0% 3%, 10% 1% 0% 0%, 60%, 22%);
+        @include texto (1.3em, $bg-color, center, normal, bold, $montserrat);
+    
+        text-transform: uppercase;
+        background-color: $third;
+        opacity: 0.6;
+        position: relative;
+    }
+    
+    
+    .boton-formulario{
+        @include box-model(0%, 0% 0% 0% 0%, 80%, 3em);
+        @include texto (1.5em, $third, center, normal, normal, $lato);
+        @include position (relative, -150%, none, 10%, none, 1);
+        border-radius: 10px;
+        border: none;
+    }
+    
+    
+    /* MODAL DEL FORMULARIO */
+
+    .form-vender{
+        @include grid ( 100%, none, space-around, center, none, none);
+        width: 100%;
+        font-size: 1.2em;
+    
+    .label-form-vender{
+        color: $third;
+        font-weight: bold;
+    }
+    
+    .cont-puestos{
+        @include grid ( 5% 20% 5% 20% 5% 20%, 100%, center, center, none, none);
+        color: $third;
+        margin: 0% -10%;
+    }
+
+    input[type=email]{
+        margin-top: 5%;
+    }
+    
+    .label-turnos{
+        margin-top: -3%;
+        margin-bottom: -5%;
+    }
+    
+    option{
+        font-size: 1.1em;
+        color: $third;
+    }
+    
+    .text-form-vender{
+        margin-top: 6%;
+    }
+    
+    .cont-notificaciones{
+        @include grid ( 5% 90%, 100%, flex-start, center, none, none);
+        font-size: 1.1em;
+        color: $third;
+    
+    }
+
+    }

@@ -1,0 +1,37 @@
+/*Socios de Anukis*/
+    .titulo-socios{
+        margin-bottom: -20%;
+        margin-top: -5%;
+    }
+    
+    .article-socios{
+        text-align: center;
+
+            h3{
+                @include texto (1.9em, $third, center, normal, 700, $montserrat);
+                margin-top: 20%;
+                margin-bottom: 7%;
+            }
+
+            p{
+                line-height: 41px;
+                margin: 20% 10% 0% 10%;
+                @include grid (100%, 100%, center, center, none, none);
+                @include texto (1.4em, $third, center, normal, normal, $lato);
+            }
+    } 
+
+    .cont-fotos-socios{
+        @include grid (80%, none, center, center, none, none);
+        row-gap: 3%;
+        margin-top: 5%;
+    }
+    
+    .cont-fotos-socios img{
+        width: 100%;
+    }
+
+    .foto-dos-de-alex{
+        border: 52px solid transparent;
+    }
+    

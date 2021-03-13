@@ -1,0 +1,28 @@
+/*Archivos base*/
+@import "../base/variables";
+@import "../base/mixin";
+
+
+/*Estilo de toda la página*/
+@import "../components/all";
+
+
+/*Estilo de la versión big screen*/
+@import "../media-query/media-query-desk-screen";
+
+/*Estilo de la versión big screen*/
+@import "../media-query/media-query-big-screen";
+
+/*Estilo de la versión large screen*/
+@import "../media-query/media-query-large-screen";
+
+/*Estilo de la versión medium screen*/
+@import "../media-query/media-query-medium-screen";
+
+/*Estilo de la versión small screen*/
+@import "../media-query/media-query-small-screen";
+
+
+
+
+

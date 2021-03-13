@@ -1,0 +1,26 @@
+    .elegirnos{
+        @include grid (100%, none, center, center, none, none);
+        @include background (140% 100%, 60em, 100%, url("../imagenes/fondos/fondo-elegirnos4.jpg"));
+    }
+
+    .motivos{
+        @include box-model(0% 0% 8% 0%, 7% 10% 10% 10%, 80%, none);
+        @include texto (1.3em, $font-color, center, normal, normal, $lato);
+        @include grid (50% 50%, 50% 50%, center, center, none, none);
+            
+        div{
+            @include box-model (normal, 5% 0%, 100%, 12em);
+            background-color: $third;
+            opacity: 0.7;
+        }
+    }
+    
+    .loguitos{
+        font-size: 3em;
+        color: $secondary;
+        margin:10% 3% 0% 4%;
+    }
+
+    .parrafo-uno{
+        font-weight: bold;
+    }

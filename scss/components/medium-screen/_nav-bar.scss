@@ -1,0 +1,102 @@
+/*Menú*/
+    .caja-de-items{
+        display: none;
+    }
+    
+    nav{
+        @include flexbox (space-around, center, normal);
+        @include box-model(0%, 0%, 100%, 13%);
+        @include texto (1em, none, center, normal, normal, $montserrat);
+        @include position (fixed, 0%, none, none, none, 5);
+        background-color: $primary;
+    }
+
+    ul{
+        @include box-model(0%, 0%, 103%, 87%);
+        @include flexbox (center, center, column);
+        @include texto (170%, none, center, normal, normal, $montserrat);
+        @include position (fixed, 13%, none, -100%, none, 5);
+        background-color: $third;
+        opacity: 0.9;
+        transition: all .5s;
+        margin-left: -3%;
+
+            div{
+                @include box-model(0%, 0% 0% 0% -3%, 100%, none);
+                font-size: 1.4em;
+                color: $font-color;
+
+                    a{
+                        color: $font-color;
+
+                            &:active{
+                                color: $secondary;
+                            }
+                            &:visited{
+                                color: $font-color;
+                            }
+                    }
+            }
+    }
+    
+    li{
+        @include box-model(1% 2%, 0% 0% 0% -1.9%, 100%, none);
+    }
+    
+    li:hover{
+        background: $bg-color-two;
+        transition: 0.7s;
+    }
+    
+    li:hover a{
+        color: $third;
+    }
+    
+    .items{
+        text-decoration: none;
+        color: $secondary ;
+    }
+    
+    a:hover, a.active{
+        background: none;
+        color: $primary;
+    }
+    
+    #check:checked ~ ul {
+        left: 0%;
+    }
+    
+    .checkboton{
+        font-size: 2em;
+        color: $secondary;
+        cursor: pointer;
+    }
+    
+    .cont-fa-search{
+        margin-left: -30%;
+    }
+    
+    .fa-search{
+        font-size: 2em;
+        color: $secondary;
+        cursor: pointer;
+    }
+    
+    #check{
+        display: none;
+    }
+    
+    .foto-nav-pant-peque{
+        min-width: 3.5em;
+        height:3.5em;
+    }
+    
+    .foto-nav-pant-peque:hover{
+        animation: flip;
+        animation-duration: 1.2s;
+    }
+    
+    .foto-nav-pant-grande{
+        display: none;
+    }
+    

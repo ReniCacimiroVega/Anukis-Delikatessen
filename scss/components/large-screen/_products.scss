@@ -1,0 +1,40 @@
+
+
+    /*Productos*/
+    .contenedor-productos{
+        @include grid (33% 33% 33%, 100%, center, center, none, wrap);
+        margin-bottom: 10%;
+    }
+    
+    .cajita-produc{
+        @include box-model(0% 8%, 0%, 100%, 50vh);
+        @include grid (100%, 70% 25% 5%, center, center, none, wrap);
+    }
+    
+    .producto{
+        width: 100%;
+        min-height: 14.5em;
+        border-radius: 2%;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .sabores{
+        @include texto (1.3em, $third, center, normal, bold, $lato);
+        @include position (relative, -35%, none, none, none, 2);
+        padding: 3% 0% 6% 0%;
+        background-color: $bg-color-two;
+    }
+    
+    .boton-produc{
+        @include box-model(3% 0% 0% 0%, -35% 0% 0% 0%, 100%, 8vh);
+        @include texto (1.3em, $buttons1, center, normal, bold, $lato);
+        @include position (relative, none, none, none, none, 3);
+        background-color:  $bg-color-two;
+    }
+    
+    .boton-produc:hover{
+        background-color: $buttons1;
+        color: $font-color;
+        transition: 0.6s;
+    }

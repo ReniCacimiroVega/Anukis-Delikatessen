@@ -1,0 +1,81 @@
+
+    /*Vender Anukis*/
+    
+    .vender{
+        @include background (100% 100%, none, 100%, url("../imagenes/fondos/gatoycesta3.webp"));
+    }
+    
+    .section-vender{
+        @include grid ( 34% 45%, 100%, center, center, none, none);
+        grid-gap: 1%;
+    }
+    
+    .section-vender h3{
+        @include box-model(0%, 10% 1% 20% 0%, 100%, 5em);
+        @include texto (4em, $third, right, normal, bold, $montserrat);
+        text-transform: uppercase;
+        border-right: 0.1em solid $third;
+        background-color: $font-color;
+    }
+    
+    h3 p{
+        display: none;
+    }
+    
+    
+    .boton-formulario{
+        @include box-model(0%, 0%, 100%, 3em);
+        @include texto (2.3em, $third, center, normal, normal, $lato);
+        border-radius: 10px;
+        border: none;
+        position: relative;
+        top: 17%;
+    }
+    
+    
+    /* MODAL DEL FORMULARIO */
+    
+    .form-vender{
+        input[type=text], input[type=email], textarea{
+            font-size: 0.7em;
+            font-weight: normal;
+                
+        }
+        input[type=text]{
+            margin: 0% 0% 5% 0%;
+        }
+
+        input[type=email]{
+            margin: 0% 0% 5% 0%;
+        }
+                }
+    
+    .label-form-vender{
+        @include texto (1.2em, $third, normal, normal, bold, $montserrat);
+    }
+    
+    .cont-puestos{
+        @include grid ( 5% 20% 5% 20% 5% 20%, 100%, flex-start, center, none, none);
+        @include texto (1em, $third, center, normal, bold, $lato);
+        margin: 3% 0% 5% 0%;
+    }
+    
+    .label-turnos{
+        margin-bottom: 3%
+    }
+    
+    option{
+        @include texto (1.1em, $third, center, normal, normal, $lato);
+    }
+    
+    .text-form-vender{
+        margin-top: 6%
+    }
+    
+    .cont-notificaciones{
+        @include grid ( 5% 90%, 100%, flex-start, center, none, none);
+        @include texto (1.1em, $third, center, normal, normal, $lato);
+    
+    }
+
+    

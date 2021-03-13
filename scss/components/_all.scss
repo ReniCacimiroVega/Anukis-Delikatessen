@@ -1,0 +1,19 @@
+
+@import "../base/variables";
+@import "../base/mixin";
+
+/*Pagina en general*/
+*{
+    margin: 0;
+    text-transform: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-color: $bg-color;
+}
+
+.links-de-los-iconos{
+    display: none;
+}

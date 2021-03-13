@@ -1,0 +1,67 @@
+// @include box-model ($padding, $margin, $width, $height);
+@mixin box-model ($padding, $margin, $width, $height){
+    padding: $padding;
+    margin: $margin;
+    width: $width;
+    height: $height;
+}
+
+// @include flexbox ($jus-content, $aling-items, $flex-direc);
+@mixin flexbox ($jus-content, $aling-items, $flex-direc){
+    display: flex;
+    justify-content: $jus-content;
+    align-items: $aling-items;
+    flex-direction: $flex-direc;
+}
+
+// @include grid ($grid-columns, $grid-rows, $jus-content, $aling-items, $flex-direc, $wrap );
+@mixin grid ($grid-columns, $grid-rows, $jus-content, $aling-items, $flex-direc, $wrap ) {
+    display: grid;
+    grid-template-columns: $grid-columns;
+    grid-template-rows: $grid-rows;
+    align-items: $aling-items;
+    justify-content: $jus-content;
+    flex-direction: $flex-direc;
+    flex-wrap: $wrap;
+}
+
+// @include texto ($size, $color, $aling, $style, $weight, $family);
+@mixin texto ($size, $color, $aling, $style, $weight, $family) {
+    font-size: $size;
+    color: $color;
+    text-align: $aling;
+    font-style: $style;
+    font-weight: $weight;
+    font-family: $family;
+}
+
+// @include background ($bg-size, $bg-height, $bg-width, $fondo);
+@mixin background ($bg-size, $bg-height, $bg-width, $fondo) {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: $bg-size ;
+    height: $bg-height;
+    width: $bg-width;
+    background-image: $fondo;
+}
+
+// @include input-style ($b-top, $b-bottom, $b-left, $b-right, $input-bgcolor, $input-color, $input-opacity);
+@mixin input-style ($b-top, $b-bottom, $b-left, $b-right, $input-bgcolor, $input-color, $input-opacity){
+    border-top: $b-top;
+    border-bottom:$b-bottom;
+    border-left:$b-left;
+    border-right:$b-right;
+    background-color:$input-bgcolor;
+    color: $input-color;
+    opacity: $input-opacity 
+}
+
+// @include position ($position, $top, $bottom, $left, $right, $z-index);
+@mixin position ($position, $top, $bottom, $left, $right, $z-index){
+    position: $position;
+    top: $top;
+    bottom: $bottom;
+    left: $left;
+    right:$right;
+    z-index: $z-index;  
+}

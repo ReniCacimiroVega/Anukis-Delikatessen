@@ -1,0 +1,11 @@
+@media only screen and (min-width: 280px) and (max-width: 560px){
+    @import "../components/small-screen/main";
+    @import "../components/small-screen/nav-bar";
+    @import "../components/small-screen/titles";
+    @import "../components/small-screen/products";
+    @import "../components/small-screen/sell-anukis";
+    @import "../components/small-screen/partners";
+    @import "../components/small-screen/choose-us";
+    @import "../components/small-screen/contact";
+    @import "../components/small-screen/footer";
+}

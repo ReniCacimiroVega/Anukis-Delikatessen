@@ -1,0 +1,57 @@
+/*Menú*/
+    
+    .foto-nav-pant-peque{
+        margin-bottom: 14%;
+        margin-left: 10%;
+        max-height:16vh;
+        min-width: 17%;
+    }
+    
+    .foto-nav-pant-peque:hover{
+        animation: bounce;
+        animation-duration: 1.2s;
+    }
+
+    .foto-nav-pant-grande{
+        display: none;
+    }
+    
+    nav{
+        @include flexbox (space-around, flex-end, normal);
+        @include box-model(0%, 0%, 100%, 21vh);
+        @include texto (1.1em, none, center, normal, normal, $montserrat);
+        @include position (fixed, 0%, none, none, none, 5);
+        background-color: $primary;
+    }
+    
+    ul{
+        @include flexbox (space-around, none, normal);
+        list-style: none;
+        margin: 0% 2% 2% -4%;
+                
+            div{
+                display: none;
+            }
+    }
+    
+    ul li a {
+        text-decoration: none;
+        @include texto (0.95em, $secondary, center, normal, 800, $montserrat);
+        @include box-model(4%, 0% 0.6em, 20%, 3px);
+    }
+    
+    ul li a:hover{
+        color: $primary;
+        background-color: $secondary;
+        border-radius: 3px;
+        transition: 0.7s;
+    }
+    
+    #check{
+        display: none;
+    }
+    
+    .fa-search, .fa-bars{
+        font-size: 0%;
+    }
+    

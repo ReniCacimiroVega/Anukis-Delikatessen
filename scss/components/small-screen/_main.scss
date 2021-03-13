@@ -1,0 +1,63 @@
+/*Header*/
+
+    .foto{
+        height: 100vh;
+        width: 220%;
+    }
+
+    .foto1{
+        margin-left: -30%;
+    }
+
+    .foto2{
+        margin-left: -65%;
+    }
+
+    .foto3{
+        margin-left: -65%;
+    }
+    
+    /*Botones*/
+    .arriba-boton{
+        @include position (fixed, none, 1%, 5%, none, 10);
+        @include texto (2em, $secondary, center, normal, normal, none);
+        @include box-model (none, none, 1.7em, 1.6em);
+        border-radius: 50px;
+        background-color: $primary;
+        text-decoration: none;
+
+            &:hover{
+                color: $secondary;
+                background-color: $primary;
+            }
+    }
+    
+    .eslogan{
+        @include texto (2.9em, $font-color, center, normal, normal, $courgette);
+        @include box-model (0% 0%, 0%, 100%, 19vh);
+        @include position (absolute, none, 15%, none, none, 2);
+        @include flexbox (center, center, normal);
+    }
+    
+    .nosotros{
+        @include flexbox (center, center, normal);
+    }
+    
+    .contenedor-motivos{
+        @include grid (90%, 20% 80%, center, center, none, none);
+        background-color: $font-color;
+        @include box-model(3% 0% 8% 0%, 10% 7% -3% 7%, 100%, 70%);
+        grid-gap: 1%;
+        text-align: center;
+        border-left: 3px solid black;
+        border-right: 3px solid black;
+    }
+    
+    .debajo-del-eslogan{
+        @include texto (2em, $third, center, italic, bold, $lato);
+    }
+
+    .texto-quienes-somos{
+        font-size: 1.3em;
+    }
+    

@@ -1,0 +1,31 @@
+    /* Titulos de secciones */
+    .animacion-titulo:hover .contenedor1{
+        transform: translate(-20px, -20px);
+    }
+    
+    .animacion-titulo:hover .titulo-de-secciones{
+        transform: translate(-40px, -40px);
+    }
+    
+    .titulo-de-secciones{
+        @include texto (5em, $third, center, normal, bolder, $montserrat);
+        @include box-model(0.25em, 0% auto, 60%, 1em);
+        @include position (relative, none, none, none, none, 3);
+        background-color: $secondary;
+        transition: transform 0.8s;
+    }
+    
+    .contenedor1{
+        @include box-model(0.25em, 0% auto, 60%, 5em);
+        @include position (relative, 5em, none, none, none, 2);
+        background-color:$primary;
+        transition: transform 0.8s;
+    
+    }
+    .contenedor2{
+        @include box-model(0.25em, 0% auto, 60%, 4.9em);
+        @include position (relative, -5.2em, none, none, none, 1);
+        background-color: $third;
+        transition: transform 0.8s;
+    }
+
