@@ -15,7 +15,7 @@
     nav{
         @include flexbox (space-around, flex-end, normal);
         @include box-model(0%, 0%, 100%, 22vh);
-        @include texto (1.2em, none, center, normal, normal, $montserrat);
+        @include texto (1em, none, center, normal, normal, $montserrat);
         @include position (fixed, 0%, none, none, none, 5);
         background-color: $primary;
     }

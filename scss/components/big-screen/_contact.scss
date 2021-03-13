@@ -69,7 +69,4 @@
     .ubicacion{
         @include box-model(0%, 0% 0% 18% 0%, 64vh, 70vh);
         border-radius: 3px;
-        -webkit-box-shadow: 11px 15px 10px -3px rgba(51,51,51,1);
-        -moz-box-shadow: 11px 15px 10px -3px rgba(51,51,51,1);
-        box-shadow: 11px 15px 10px -3px rgba(51,51,51,1);
     }
