@@ -44,6 +44,9 @@
         @include box-model(3% 0% 5% 0%, 6% 7%, 100%, 70%);
         grid-gap: 7%;
         text-align: center;
+        -webkit-box-shadow: 11px 15px 10px -3px rgba(51,51,51,1);
+        -moz-box-shadow: 11px 15px 10px -3px rgba(51,51,51,1);
+        box-shadow: 11px 15px 10px -3px rgba(51,51,51,1);
     }
     .debajo-del-eslogan{
         @include texto (2.3em, $third, center, italic, bold, $lato);
