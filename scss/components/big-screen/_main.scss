@@ -28,9 +28,9 @@
     // Eslogan
     .eslogan{
         @include texto (4em, $font-color, center, normal, normal, $courgette);
-        @include box-model (1.5% 0%, 0%, 100%, 17vh);
+        @include box-model (1.5% 0%, 0%, 100%, 18vh);
         @include position (absolute, 75%, none, none, none, 2);
-        background-color: $third;
+        background-color: red;
         opacity: 0.65;
     }
     
