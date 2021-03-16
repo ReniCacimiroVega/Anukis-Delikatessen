@@ -988,10 +988,10 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     margin-bottom: 5%;
-    margin-top: -2%;
   }
   .contenedor-productos h3 {
     text-align: center;
+    margin: 0% 0% 3% 0%;
   }
 
   .carrousel-productos {
