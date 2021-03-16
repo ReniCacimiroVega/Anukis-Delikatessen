@@ -984,11 +984,14 @@ body {
   .contenedor-productos {
     display: grid;
     grid-template-columns: 25% 25% 25%;
-    grid-template-rows: 15% 85%;
+    grid-template-rows: 20% 80%;
     flex-wrap: wrap;
     justify-content: space-around;
     margin-bottom: 5%;
     margin-top: -2%;
+  }
+  .contenedor-productos h3 {
+    text-align: center;
   }
 
   .carrousel-productos {
