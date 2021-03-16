@@ -1050,6 +1050,10 @@ body {
     margin: 0% 0% 0% -30%;
   }
 
+  .boton-prev-sig {
+    background-color: transparent;
+  }
+
   /*Socios de Anukis*/
   .titulo-socios {
     margin-bottom: -10%;
