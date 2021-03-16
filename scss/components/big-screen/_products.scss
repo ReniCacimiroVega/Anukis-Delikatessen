@@ -1,6 +1,6 @@
     /*Productos*/
     .contenedor-productos{
-        @include grid (31% 31% 31%, 100%, center, center, none, wrap);
+        @include grid (30% 30% 30%, 100%, center, center, none, none);
         margin-bottom: 10%;
     }
 

@@ -1031,12 +1031,12 @@ body {
   /*Productos*/
   .contenedor-productos {
     display: grid;
-    grid-template-columns: 31% 31% 31%;
+    grid-template-columns: 30% 30% 30%;
     grid-template-rows: 100%;
     align-items: center;
     justify-content: center;
     flex-direction: none;
-    flex-wrap: wrap;
+    flex-wrap: none;
     margin-bottom: 10%;
   }
 
