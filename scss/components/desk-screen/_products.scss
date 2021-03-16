@@ -1,40 +1,28 @@
-
-
     /*Productos*/
     .contenedor-productos{
-        @include grid (31% 31% 31%, 100%, center, center, none, wrap);
-        margin-bottom: 10%;
+        display: grid;
+        grid-template-columns: 25% 25% 25%;
+        grid-template-rows: 100%;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-bottom: 5%;
+        margin-top: -2%;
     }
-    
-    .cajita-produc{
-        @include box-model(0% 8%, 0%, 100%, 55vh);
-        @include grid (100%, 70% 25% 5%, center, center, none, wrap);
-    }
-    
-    .producto{
+
+    .carrousel-productos{
         width: 100%;
-        min-height: 22em;
-        border-radius: 2%;
-        position: relative;
-        z-index: 1;
+        height: 62vh;
+        -webkit-box-shadow: 11px 15px 10px -3px rgba(51,51,51,1);
+        -moz-box-shadow: 11px 15px 10px -3px rgba(51,51,51,1);
+        box-shadow: 11px 15px 10px -3px rgba(51,51,51,1);
     }
-    
-    .sabores{
-        @include texto (1.7em, $third, center, normal, bold, $lato);
-        @include position (relative, -27%, none, none, none, 2);
-        padding: 5% 0% 6% 0%;
-        background-color: $bg-color-two;
+
+    .fotos-productos{
+        height: 62vh;
+        margin: 0% 0% 0% -30%;
     }
-    
-    .boton-produc{
-        @include box-model(3% 0% 0% 0%, -21% 0% 0% 0%, 100%, 8vh);
-        @include texto (1.7em, $buttons1, center, normal, bold, $lato);
-        @include position (relative, none, none, none, none, 3);
-        background-color:  $bg-color-two;
-    }
-    
-    .boton-produc:hover{
-        background-color: $buttons1;
-        color: $font-color;
-        transition: 0.6s;
+
+    .boton-prev-sig{
+        background-color: transparent;
+        border: transparent;
     }
