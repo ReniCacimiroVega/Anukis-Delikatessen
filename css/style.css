@@ -990,6 +990,9 @@ body {
     margin-bottom: 5%;
     margin-top: -2%;
   }
+  .contenedor-productos h3 {
+    text-align: center;
+  }
 
   .carrousel-productos {
     width: 100%;
