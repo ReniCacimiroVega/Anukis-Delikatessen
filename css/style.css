@@ -1043,6 +1043,7 @@ body {
   .carrousel-productos {
     width: 27%;
     height: 62vh;
+    margin: 0% 5%;
   }
 
   .fotos-productos {
