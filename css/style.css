@@ -1035,6 +1035,7 @@ body {
     grid-template-rows: 100%;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-bottom: 5%;
   }
 
   .carrousel-productos {
