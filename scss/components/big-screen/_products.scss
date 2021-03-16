@@ -1,13 +1,13 @@
     /*Productos*/
     .contenedor-productos{
-        @include grid (30% 30% 30%, 100%, center, center, none, none);
+        display: flex;
+        justify-content: space-around;
         margin-bottom: 10%;
     }
 
     .carrousel-productos{
         width: 27%;
         height: 62vh;
-        margin: 0% 5%;
     }
 
     .fotos-productos{
