@@ -1030,8 +1030,9 @@ body {
 
   /*Productos*/
   .contenedor-productos {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    grid-template-rows: 100%;
     margin-bottom: 10%;
   }
 
