@@ -2,16 +2,16 @@
     .contenedor-productos{
         display: grid;
         grid-template-columns: 25% 25% 25%;
-        grid-template-rows: 10% 90%;
+        grid-template-rows: 15% 85%;
         flex-wrap: wrap;
         justify-content: space-around;
         margin-bottom: 5%;
         margin-top: -2%;
 
-            h3{
-                text-align: center;
-                margin: 0% 0% 13% 0%;
-            }
+            // h3{
+            //     text-align: center;
+            //     margin: 0% 0% 13% 0%;
+            // }
     }
 
     .carrousel-productos{
