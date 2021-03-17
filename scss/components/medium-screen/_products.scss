@@ -1,23 +1,27 @@
     /*Productos*/
     .contenedor-productos{
-        width: 90%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
 
             h3{
                 text-align: center;
-                margin-top: 10%;
+                margin-top: 5%;
                 font-size: 1.5em;
             }
     }
 
     .carrousel-productos{
-        margin: 10% 0% 0% 10%;
+        margin: 5% 0% 0% 10%;
         width: 80%;
     }
 
     .cont-carrousel-y-h3{
+        margin: 10% 0%;
         background-color: $bg-color-two;
-        width: 100%;
-        height: 62vh;  
+        width: 80%;
+        height: 72vh;  
         -webkit-box-shadow: 11px 15px 10px -3px rgba(51,51,51,1);
         -moz-box-shadow: 11px 15px 10px -3px rgba(51,51,51,1);
         box-shadow: 11px 15px 10px -3px rgba(51,51,51,1);
@@ -26,6 +30,7 @@
     .fotos-productos{
         height: 52vh;
         margin: 0% 0% 0% -30%;
+        width: 100%;
     }
 
     .boton-prev-sig{
