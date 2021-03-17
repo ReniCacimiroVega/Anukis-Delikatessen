@@ -792,7 +792,6 @@ body {
     margin-left: 3%;
     max-height: 15vh;
     min-width: 20%;
-    opacity: 1 !important;
   }
 
   .foto-nav-pant-grande:hover {
@@ -821,8 +820,7 @@ body {
     left: none;
     right: none;
     z-index: 5;
-    background-color: black;
-    opacity: 0.6;
+    background-color: #4F2A1C;
   }
 
   ul {
