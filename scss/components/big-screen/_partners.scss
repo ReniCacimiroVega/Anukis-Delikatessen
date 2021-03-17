@@ -24,8 +24,6 @@
     .cont-fotos-socios{
         @include grid (33.3% 20.4% 33.3%, 100%, center, center, none, none);
         grid-gap: 6.5%;
-        background-position: center;
-        background-size: 100%;
 
             &:hover{
                 background-position: center;
@@ -40,5 +38,30 @@
         width: 100%;
         min-height: 30vh;
         max-height: 75vh;
+    }
+
+    .foto-socios{
+        width: 100%;
+        background-size: 100% 100%;
+        background-position: center;
+        transition: 0.8s;
+
+            &:hover{
+                background-size: 150% 150%;
+                background-position: center;
+
+            }
+    }
+
+    .foto-socios1{
+        background-image: url("../imagenes/fotos-de-rodri/foto-duo.jpg");
+    }
+
+    .foto-socios2{
+        background-image: url("../imagenes/fotos-de-rodri/foto-gatito-rodri4.jpg");
+    }
+    
+    .foto-socios3{
+        background-image: url("../imagenes/fotos-de-rodri/foto-pajaro.jpg");
     }
     
