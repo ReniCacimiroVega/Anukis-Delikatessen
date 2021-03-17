@@ -987,7 +987,7 @@ body {
   .contenedor-productos {
     display: grid;
     grid-template-columns: 25% 25% 25%;
-    grid-template-rows: 20% 80%;
+    grid-template-rows: 100%;
     flex-wrap: wrap;
     justify-content: space-around;
     margin-bottom: 5%;
@@ -1003,6 +1003,10 @@ body {
     -webkit-box-shadow: 11px 15px 10px -3px #333333;
     -moz-box-shadow: 11px 15px 10px -3px #333333;
     box-shadow: 11px 15px 10px -3px #333333;
+  }
+
+  .cont-carrousel-y-h3 {
+    background-color: blue;
   }
 
   .fotos-productos {
