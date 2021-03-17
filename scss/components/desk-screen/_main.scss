@@ -15,8 +15,8 @@
     /*Botones*/
     .arriba-boton{
         @include position (fixed, none, 3%, 5%, none, 10);
-        @include texto (3.5em, $secondary, center, normal, normal, none);
-        @include box-model (none, none, 1.7em, 1.6em);
+        @include texto (2.5em, $secondary, center, normal, normal, none);
+        @include box-model (none, none, 1.6em, 1.5em);
         background-color: $primary;
         border-radius: 50px;
 
@@ -27,8 +27,8 @@
 
     // Eslogan
     .eslogan{
-        @include texto (5em, $font-color, center, normal, normal, $courgette);
-        @include box-model (1.5% 0%, 0%, 100%, 16vh);
+        @include texto (4em, $font-color, center, normal, normal, $courgette);
+        @include box-model (1.5% 0%, 0%, 100%, 20vh);
         @include position (absolute, 75%, none, none, none, 2);
         background-color: $third;
         opacity: 0.65;
@@ -41,15 +41,18 @@
     .contenedor-motivos{
         @include grid (90%, 20% 80%, center, center, none, none);
         @include input-style (none, none, 3px solid $third, 3px solid $third, $font-color, none, 1);
-        @include box-model(3% 0% 6% 0%, 6% 7%, 100%, 60vh);
-        grid-gap: 13%;
+        @include box-model(3% 0% 5% 0%, 6% 7%, 100%, 70%);
+        grid-gap: 7%;
         text-align: center;
+        -webkit-box-shadow: 11px 15px 10px -3px rgba(51,51,51,1);
+        -moz-box-shadow: 11px 15px 10px -3px rgba(51,51,51,1);
+        box-shadow: 11px 15px 10px -3px rgba(51,51,51,1);
     }
     .debajo-del-eslogan{
-        @include texto (3.2em, $third, center, italic, bold, $lato);
+        @include texto (2.3em, $third, center, italic, bold, $lato);
     }
     .texto-quienes-somos{
-        font-size: 2em;
+        font-size: 1.5em;
     }
     
     

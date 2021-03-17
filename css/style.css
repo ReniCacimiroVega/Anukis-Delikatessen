@@ -45,7 +45,7 @@ body {
     left: 5%;
     right: none;
     z-index: 10;
-    font-size: 3.5em;
+    font-size: 2.5em;
     color: #ffff6c;
     text-align: center;
     font-style: normal;
@@ -53,8 +53,8 @@ body {
     font-family: none;
     padding: none;
     margin: none;
-    width: 1.7em;
-    height: 1.6em;
+    width: 1.6em;
+    height: 1.5em;
     background-color: #4F2A1C;
     border-radius: 50px;
   }
@@ -63,7 +63,7 @@ body {
   }
 
   .eslogan {
-    font-size: 5em;
+    font-size: 4em;
     color: whitesmoke;
     text-align: center;
     font-style: normal;
@@ -72,7 +72,7 @@ body {
     padding: 1.5% 0%;
     margin: 0%;
     width: 100%;
-    height: 16vh;
+    height: 20vh;
     position: absolute;
     top: 75%;
     bottom: none;
@@ -105,16 +105,19 @@ body {
     background-color: whitesmoke;
     color: none;
     opacity: 1;
-    padding: 3% 0% 6% 0%;
+    padding: 3% 0% 5% 0%;
     margin: 6% 7%;
     width: 100%;
-    height: 60vh;
-    grid-gap: 13%;
+    height: 70%;
+    grid-gap: 7%;
     text-align: center;
+    -webkit-box-shadow: 11px 15px 10px -3px #333333;
+    -moz-box-shadow: 11px 15px 10px -3px #333333;
+    box-shadow: 11px 15px 10px -3px #333333;
   }
 
   .debajo-del-eslogan {
-    font-size: 3.2em;
+    font-size: 2.3em;
     color: black;
     text-align: center;
     font-style: italic;
@@ -123,7 +126,7 @@ body {
   }
 
   .texto-quienes-somos {
-    font-size: 2em;
+    font-size: 1.5em;
   }
 
   /*Menú*/
@@ -1354,8 +1357,12 @@ body {
 /*Estilo de la versión large screen*/
 @media only screen and (min-width: 780px) and (max-width: 951px) {
   /* Header*/
+  .carrousel-pequeño {
+    display: none;
+  }
+
   .foto {
-    height: 100vh;
+    height: 120vh;
     width: 100%;
   }
 
@@ -1363,7 +1370,7 @@ body {
     margin-top: 10%;
   }
 
-  /*Boton*/
+  /*Botones*/
   .arriba-boton {
     position: fixed;
     top: none;
@@ -1379,17 +1386,17 @@ body {
     font-family: none;
     padding: none;
     margin: none;
-    width: 1.7em;
-    height: 1.6em;
-    border-radius: 50px;
+    width: 1.6em;
+    height: 1.5em;
     background-color: #4F2A1C;
+    border-radius: 50px;
   }
   .arriba-boton:hover {
     color: #ffff6c;
   }
 
   .eslogan {
-    font-size: 2.9em;
+    font-size: 4em;
     color: whitesmoke;
     text-align: center;
     font-style: normal;
@@ -1398,13 +1405,14 @@ body {
     padding: 1.5% 0%;
     margin: 0%;
     width: 100%;
-    height: 16vh;
+    height: 20vh;
     position: absolute;
     top: 75%;
     bottom: none;
     left: none;
     right: none;
     z-index: 2;
+    background-color: black;
     opacity: 0.65;
   }
 
@@ -1423,17 +1431,26 @@ body {
     justify-content: center;
     flex-direction: none;
     flex-wrap: none;
+    border-top: none;
+    border-bottom: none;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
     background-color: whitesmoke;
+    color: none;
+    opacity: 1;
     padding: 3% 0% 5% 0%;
     margin: 6% 7%;
     width: 100%;
     height: 70%;
-    grid-gap: 1%;
+    grid-gap: 7%;
     text-align: center;
+    -webkit-box-shadow: 11px 15px 10px -3px #333333;
+    -moz-box-shadow: 11px 15px 10px -3px #333333;
+    box-shadow: 11px 15px 10px -3px #333333;
   }
 
   .debajo-del-eslogan {
-    font-size: 2em;
+    font-size: 2.3em;
     color: black;
     text-align: center;
     font-style: italic;
@@ -1442,7 +1459,7 @@ body {
   }
 
   .texto-quienes-somos {
-    font-size: 1.3em;
+    font-size: 1.5em;
   }
 
   /*Menú*/
