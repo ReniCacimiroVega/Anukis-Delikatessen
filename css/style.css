@@ -326,8 +326,8 @@ body {
   /*Productos*/
   .contenedor-productos {
     display: grid;
-    grid-template-columns: 25% 25% 25%;
-    grid-template-rows: 20% 80%;
+    grid-template-columns: 28% 28% 28%;
+    grid-template-rows: 100%;
     flex-wrap: wrap;
     justify-content: space-around;
     margin-bottom: 5%;
@@ -335,11 +335,18 @@ body {
   }
   .contenedor-productos h3 {
     text-align: center;
+    margin-top: 10%;
   }
 
   .carrousel-productos {
+    margin: 10% 0% 0% 10%;
+    width: 80%;
+  }
+
+  .cont-carrousel-y-h3 {
+    background-color: gainsboro;
     width: 100%;
-    height: 62vh;
+    height: 88vh;
     -webkit-box-shadow: 11px 15px 10px -3px #333333;
     -moz-box-shadow: 11px 15px 10px -3px #333333;
     box-shadow: 11px 15px 10px -3px #333333;
@@ -821,7 +828,7 @@ body {
     right: none;
     z-index: 5;
     background-color: #4F2A1C;
-    opacity: 0.6;
+    opacity: 0.8;
   }
 
   ul {

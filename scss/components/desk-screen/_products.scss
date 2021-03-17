@@ -1,8 +1,8 @@
     /*Productos*/
     .contenedor-productos{
         display: grid;
-        grid-template-columns: 25% 25% 25%;
-        grid-template-rows: 20% 80%;
+        grid-template-columns: 28% 28% 28%;
+        grid-template-rows: 100%;
         flex-wrap: wrap;
         justify-content: space-around;
         margin-bottom: 5%;
@@ -10,12 +10,19 @@
 
             h3{
                 text-align: center;
+                margin-top: 10%;
             }
     }
 
     .carrousel-productos{
+        margin: 10% 0% 0% 10%;
+        width: 80%;
+    }
+
+    .cont-carrousel-y-h3{
+        background-color: $bg-color-two;
         width: 100%;
-        height: 62vh;
+        height: 88vh;  
         -webkit-box-shadow: 11px 15px 10px -3px rgba(51,51,51,1);
         -moz-box-shadow: 11px 15px 10px -3px rgba(51,51,51,1);
         box-shadow: 11px 15px 10px -3px rgba(51,51,51,1);
