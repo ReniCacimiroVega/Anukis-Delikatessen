@@ -1684,7 +1684,7 @@ body {
   .cont-carrousel-y-h3 {
     background-color: gainsboro;
     width: 100%;
-    height: 82vh;
+    height: 72vh;
     -webkit-box-shadow: 11px 15px 10px -3px #333333;
     -moz-box-shadow: 11px 15px 10px -3px #333333;
     box-shadow: 11px 15px 10px -3px #333333;
@@ -2333,85 +2333,36 @@ body {
 
   /*Productos*/
   .contenedor-productos {
-    display: grid;
-    grid-template-columns: 48% 48%;
-    grid-template-rows: 40%;
-    align-items: center;
-    justify-content: center;
-    flex-direction: none;
-    flex-wrap: wrap;
-    margin-top: 20%;
-    margin-bottom: -17%;
-    row-gap: 15%;
+    width: 90%;
   }
-
-  .cajita-produc {
-    padding: 0% 8%;
-    margin: 0% 0% -5% 0%;
-    width: 100%;
-    height: 55vh;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 45% 25% 25%;
-    align-items: center;
-    justify-content: center;
-    flex-direction: none;
-    flex-wrap: wrap;
-  }
-
-  .producto {
-    width: 100%;
-    min-height: 16em;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    position: relative;
-    z-index: 1;
-  }
-
-  .sabores {
-    font-size: 1.3em;
-    color: black;
+  .contenedor-productos h3 {
     text-align: center;
-    font-style: normal;
-    font-weight: bold;
-    font-family: "Lato", sans-serif;
-    position: relative;
-    top: -36%;
-    bottom: none;
-    left: none;
-    right: none;
-    z-index: 2;
-    padding: 5% 0% 5% 0%;
-    margin: -10% 0% 0% 0%;
-    width: 100%;
-    height: 10vh;
-    background-color: gainsboro;
+    margin-top: 10%;
+    font-size: 1.5em;
   }
 
-  .boton-produc {
-    padding: 3% 0% 3% 0%;
-    margin: -50% 0% 0% 0%;
-    width: 100%;
-    height: 10vh;
-    font-size: 1.3em;
-    color: darkred;
-    text-align: center;
-    font-style: normal;
-    font-weight: bold;
-    font-family: "Lato", sans-serif;
-    position: relative;
-    top: none;
-    bottom: none;
-    left: none;
-    right: none;
-    z-index: 3;
-    background-color: gainsboro;
+  .carrousel-productos {
+    margin: 10% 0% 0% 10%;
+    width: 80%;
   }
 
-  .boton-produc:hover {
-    background-color: darkred;
-    color: whitesmoke;
-    transition: 0.6s;
+  .cont-carrousel-y-h3 {
+    background-color: gainsboro;
+    width: 100%;
+    height: 62vh;
+    -webkit-box-shadow: 11px 15px 10px -3px #333333;
+    -moz-box-shadow: 11px 15px 10px -3px #333333;
+    box-shadow: 11px 15px 10px -3px #333333;
+  }
+
+  .fotos-productos {
+    height: 52vh;
+    margin: 0% 0% 0% -30%;
+  }
+
+  .boton-prev-sig {
+    background-color: transparent;
+    border: transparent;
   }
 
   /*Vender Anukis*/
