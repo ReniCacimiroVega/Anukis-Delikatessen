@@ -14,8 +14,8 @@
     }
 
     .carrousel-productos{
-        width: 100%;
-        height: 62vh;
+        width: 80%;
+        height: 60vh;
         -webkit-box-shadow: 11px 15px 10px -3px rgba(51,51,51,1);
         -moz-box-shadow: 11px 15px 10px -3px rgba(51,51,51,1);
         box-shadow: 11px 15px 10px -3px rgba(51,51,51,1);
@@ -23,8 +23,9 @@
 
     .cont-carrousel-y-h3{
         background-color: $bg-color-two;
-        width: 120%;
-        height: 60vh;    }
+        width: 100%;
+        height: 64vh;  
+    }
 
     .fotos-productos{
         height: 62vh;

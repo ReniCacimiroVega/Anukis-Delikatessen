@@ -998,8 +998,8 @@ body {
   }
 
   .carrousel-productos {
-    width: 100%;
-    height: 62vh;
+    width: 80%;
+    height: 60vh;
     -webkit-box-shadow: 11px 15px 10px -3px #333333;
     -moz-box-shadow: 11px 15px 10px -3px #333333;
     box-shadow: 11px 15px 10px -3px #333333;
@@ -1007,8 +1007,8 @@ body {
 
   .cont-carrousel-y-h3 {
     background-color: gainsboro;
-    width: 120%;
-    height: 60vh;
+    width: 100%;
+    height: 64vh;
   }
 
   .fotos-productos {
