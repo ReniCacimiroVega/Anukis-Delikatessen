@@ -1006,7 +1006,9 @@ body {
   }
 
   .cont-carrousel-y-h3 {
-    background-color: blue;
+    background-color: gainsboro;
+    width: 120%;
+    height: 60vh;
   }
 
   .fotos-productos {
