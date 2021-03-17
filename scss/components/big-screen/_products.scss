@@ -1,7 +1,7 @@
     /*Productos*/
     .contenedor-productos{
         display: grid;
-        grid-template-columns: 25% 25% 25%;
+        grid-template-columns: 28% 28% 28%;
         grid-template-rows: 100%;
         flex-wrap: wrap;
         justify-content: space-around;
@@ -14,8 +14,10 @@
     }
 
     .carrousel-productos{
+        display: flex;
+        justify-content: center;
         width: 80%;
-        height: 60vh;
+        height: 50vh;
         -webkit-box-shadow: 11px 15px 10px -3px rgba(51,51,51,1);
         -moz-box-shadow: 11px 15px 10px -3px rgba(51,51,51,1);
         box-shadow: 11px 15px 10px -3px rgba(51,51,51,1);
