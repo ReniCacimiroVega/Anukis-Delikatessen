@@ -17,7 +17,8 @@
         @include box-model(0%, 0%, 100%, 22vh);
         @include texto (1em, none, center, normal, normal, $montserrat);
         @include position (fixed, 0%, none, none, none, 5);
-        background-color: transparent;
+        background-color: $third;
+        opacity: 0.6;
     }
 
     ul{
