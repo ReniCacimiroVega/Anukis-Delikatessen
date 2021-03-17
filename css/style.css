@@ -1098,6 +1098,12 @@ body {
     flex-direction: none;
     flex-wrap: none;
     grid-gap: 6.5%;
+    background-position: center;
+    background-size: 100%;
+  }
+  .cont-fotos-socios:hover {
+    background-position: center;
+    background-size: 150%;
   }
 
   .cont-fotos-socios img {

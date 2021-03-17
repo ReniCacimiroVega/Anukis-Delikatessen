@@ -24,7 +24,17 @@
     .cont-fotos-socios{
         @include grid (33.3% 20.4% 33.3%, 100%, center, center, none, none);
         grid-gap: 6.5%;
+        background-position: center;
+        background-size: 100%;
+
+            &:hover{
+                background-position: center;
+                background-size: 150%;
+        
+
+            }
     }
+
     
     .cont-fotos-socios img{
         width: 100%;
