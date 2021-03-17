@@ -1032,6 +1032,11 @@ body {
     border: transparent;
   }
 
+  .boton-encargar {
+    width: 100%;
+    height: 10vh;
+  }
+
   /*Socios de Anukis*/
   .titulo-socios {
     margin-bottom: -10%;
