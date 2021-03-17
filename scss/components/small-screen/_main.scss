@@ -49,6 +49,9 @@
         @include box-model(3% 0% 8% 0%, 10% 7% -3% 7%, 100%, 70%);
         grid-gap: 1%;
         text-align: center;
+        -webkit-box-shadow: 11px 15px 10px -3px rgba(51,51,51,1);
+        -moz-box-shadow: 11px 15px 10px -3px rgba(51,51,51,1);
+        box-shadow: 11px 15px 10px -3px rgba(51,51,51,1);
         border-left: 3px solid black;
         border-right: 3px solid black;
     }
