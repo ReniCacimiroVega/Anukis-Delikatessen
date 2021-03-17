@@ -821,6 +821,7 @@ body {
     right: none;
     z-index: 5;
     background-color: #4F2A1C;
+    opacity: 0.6;
   }
 
   ul {
