@@ -2531,7 +2531,7 @@ body {
     background-color: whitesmoke;
     border-radius: 20px;
     opacity: 0.6;
-    font-size: 1.7em;
+    font-size: 20em;
   }
 
   .carrousel-productos {
@@ -3217,7 +3217,7 @@ body {
   }
   .contenedor-productos h3 {
     text-align: center;
-    margin-top: 5%;
+    margin: 5% 0%;
     font-size: 1.6em;
   }
   .contenedor-productos h4 {
@@ -3226,7 +3226,7 @@ body {
     background-color: whitesmoke;
     border-radius: 20px;
     opacity: 0.6;
-    font-size: 1.7em;
+    font-size: 1.2em;
   }
 
   .carrousel-productos {
@@ -3235,10 +3235,10 @@ body {
   }
 
   .cont-carrousel-y-h3 {
-    margin: 3% 0%;
+    margin: 7% 0%;
     background-color: gainsboro;
     width: 80%;
-    height: 79vh;
+    height: 59vh;
     -webkit-box-shadow: 11px 15px 10px -3px #333333;
     -moz-box-shadow: 11px 15px 10px -3px #333333;
     box-shadow: 11px 15px 10px -3px #333333;
@@ -3246,7 +3246,7 @@ body {
 
   .fotos-productos {
     width: 100%;
-    height: 47vh;
+    height: 39vh;
   }
 
   .boton-prev-sig {
@@ -3256,7 +3256,7 @@ body {
 
   .boton-encargar {
     width: 100%;
-    height: 13vh;
+    height: 8vh;
     font-size: 1.3em;
     background-color: firebrick;
     color: whitesmoke;

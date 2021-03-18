@@ -7,7 +7,7 @@
 
         h3{
             text-align: center;
-            margin-top: 5%;
+            margin: 5% 0%;
             font-size: 1.6em;
         }
 
@@ -17,7 +17,7 @@
             background-color: $font-color;
             border-radius: 20px;
             opacity: 0.6;
-            font-size: 20em;
+            font-size: 1.2em;
         }
     }
 
@@ -27,10 +27,10 @@
     }
 
     .cont-carrousel-y-h3{
-        margin: 3% 0%;
+        margin: 7% 0%;
         background-color: $bg-color-two;
         width: 80%;
-        height: 79vh;  
+        height: 59vh;  
         -webkit-box-shadow: 11px 15px 10px -3px rgba(51,51,51,1);
         -moz-box-shadow: 11px 15px 10px -3px rgba(51,51,51,1);
         box-shadow: 11px 15px 10px -3px rgba(51,51,51,1);
@@ -38,7 +38,7 @@
 
     .fotos-productos{
         width: 100%;
-        height: 47vh;
+        height: 39vh;
 
     }
 
@@ -49,7 +49,7 @@
 
     .boton-encargar{
         width: 100%;
-        height: 13vh;
+        height: 8vh;
         font-size: 1.3em;
         background-color:firebrick;
         color: $font-color;
