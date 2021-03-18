@@ -1,12 +1,13 @@
 /*Header*/
     .foto{
-        height: 100vh;
+        margin-top: 10%;
+        height: 90vh;
         width: 100%;
     }
     
     /*Boton*/
     .arriba-boton{
-        @include position (fixed, none, 1%, 5%, none, 10);
+        @include position (fixed, none, 1%, 5%, none, 4);
         @include texto (2em, $secondary, center, normal, normal, none);
         @include box-model (none, none, 1.7em, 1.6em);
         border-radius: 50px;
@@ -21,8 +22,8 @@
     // Eslogan
     .eslogan{
         @include texto (8vh, $font-color, center, normal, normal, $courgette);
-        @include box-model (0% 0%, 0%, 100%, 15vh);
-        @include position (absolute, none, 20%, none, none, 6);
+        @include box-model (0% 0%, 0%, 100%, 20vh);
+        @include position (absolute, none, 16%, none, none, 6);
         @include flexbox (center, center, normal);
         opacity: 0.65;
         background-color: $third;

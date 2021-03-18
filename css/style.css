@@ -2201,7 +2201,8 @@ body {
 @media only screen and (min-width: 560px) and (max-width: 780px) {
   /*Header*/
   .foto {
-    height: 100vh;
+    margin-top: 10%;
+    height: 90vh;
     width: 100%;
   }
 
@@ -2212,7 +2213,7 @@ body {
     bottom: 1%;
     left: 5%;
     right: none;
-    z-index: 10;
+    z-index: 4;
     font-size: 2em;
     color: #ffff6c;
     text-align: center;
@@ -2241,10 +2242,10 @@ body {
     padding: 0% 0%;
     margin: 0%;
     width: 100%;
-    height: 15vh;
+    height: 20vh;
     position: absolute;
     top: none;
-    bottom: 20%;
+    bottom: 16%;
     left: none;
     right: none;
     z-index: 6;
@@ -2324,7 +2325,7 @@ body {
     bottom: none;
     left: none;
     right: none;
-    z-index: 5;
+    z-index: 7;
     background-color: #4F2A1C;
   }
 
@@ -2522,32 +2523,55 @@ body {
   .contenedor-productos h3 {
     text-align: center;
     margin-top: 5%;
-    font-size: 1.5em;
+    font-size: 1.7em;
+  }
+  .contenedor-productos h5 {
+    margin: 0% 0% 0% 0%;
+    color: black;
+    background-color: whitesmoke;
+    opacity: 0.6;
+    border-radius: 20px;
+    font-size: 1.4em;
   }
 
   .carrousel-productos {
-    margin: 5% 0% 0% 10%;
+    margin: 3% 0% 0% 10%;
     width: 80%;
   }
 
   .cont-carrousel-y-h3 {
-    margin: 5% 0%;
+    margin: 3% 0%;
     background-color: gainsboro;
     width: 80%;
-    height: 72vh;
+    height: 79vh;
     -webkit-box-shadow: 11px 15px 10px -3px #333333;
     -moz-box-shadow: 11px 15px 10px -3px #333333;
     box-shadow: 11px 15px 10px -3px #333333;
   }
 
   .fotos-productos {
-    height: 52vh;
     width: 100%;
+    height: 47vh;
   }
 
   .boton-prev-sig {
     background-color: transparent;
     border: transparent;
+  }
+
+  .boton-encargar {
+    width: 100%;
+    height: 13vh;
+    font-size: 1.3em;
+    background-color: firebrick;
+    color: whitesmoke;
+    border: none;
+  }
+  .boton-encargar:hover {
+    background-color: whitesmoke;
+    color: firebrick;
+    font-weight: bold;
+    border: 3px solid firebrick;
   }
 
   /*Vender Anukis*/
