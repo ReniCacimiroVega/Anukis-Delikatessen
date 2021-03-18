@@ -2525,8 +2525,7 @@ body {
     margin-top: 5%;
     font-size: 1.7em;
   }
-
-  h4 {
+  .contenedor-productos h4 {
     margin: 0% 0% 0% 0%;
     color: black;
     background-color: whitesmoke;
