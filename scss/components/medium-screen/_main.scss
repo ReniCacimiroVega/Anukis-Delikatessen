@@ -22,9 +22,10 @@
     .eslogan{
         @include texto (8vh, $font-color, center, normal, normal, $courgette);
         @include box-model (0% 0%, 0%, 100%, 15vh);
-        @include position (absolute, none, 20%, none, none, 2);
+        @include position (absolute, none, 20%, none, none, 6);
         @include flexbox (center, center, normal);
-        opacity: 0.8;
+        opacity: 0.65;
+        background-color: $third;
     }
     
     // Quiénes somos

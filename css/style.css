@@ -78,7 +78,7 @@ body {
     bottom: none;
     left: none;
     right: none;
-    z-index: 2;
+    z-index: 6;
     background-color: black;
     opacity: 0.65;
   }
@@ -533,6 +533,11 @@ body {
   }
   .form-vender input[type=email] {
     margin: 0% 0% 5% 0%;
+  }
+
+  .modal-header, .modal-footer {
+    background-color: #4F2A1C;
+    color: #ffff6c;
   }
 
   .label-form-vender {
@@ -1259,6 +1264,11 @@ body {
     margin: 0% 0% 4% 0%;
   }
 
+  .modal-header, .modal-footer {
+    background-color: #4F2A1C;
+    color: #ffff6c;
+  }
+
   .label-form-vender {
     font-size: 1.2em;
     color: black;
@@ -1517,7 +1527,7 @@ body {
     bottom: none;
     left: none;
     right: none;
-    z-index: 2;
+    z-index: 6;
     background-color: black;
     opacity: 0.65;
   }
@@ -1964,9 +1974,6 @@ body {
   }
 
   /* MODAL DEL FORMULARIO */
-  .form-vender {
-    border: none;
-  }
   .form-vender input[type=text], .form-vender input[type=email], .form-vender textarea {
     font-size: 1em;
     font-weight: normal;
@@ -2240,12 +2247,13 @@ body {
     bottom: 20%;
     left: none;
     right: none;
-    z-index: 2;
+    z-index: 6;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: normal;
-    opacity: 0.8;
+    opacity: 0.65;
+    background-color: black;
   }
 
   .nosotros {
@@ -2629,6 +2637,11 @@ body {
     font-weight: bold;
   }
 
+  .modal-header, .modal-footer {
+    background-color: #4F2A1C;
+    color: #ffff6c;
+  }
+
   .cont-puestos {
     display: grid;
     grid-template-columns: 5% 20% 5% 20% 5% 20%;
@@ -2934,7 +2947,7 @@ body {
     bottom: 15%;
     left: none;
     right: none;
-    z-index: 2;
+    z-index: 6;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -3267,6 +3280,10 @@ body {
   .form-vender .label-form-vender {
     color: black;
     font-weight: bold;
+  }
+  .form-vender .modal-header, .form-vender .modal-footer {
+    background-color: #4F2A1C;
+    color: #ffff6c;
   }
   .form-vender .cont-puestos {
     display: grid;

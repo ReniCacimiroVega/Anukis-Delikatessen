@@ -35,7 +35,7 @@
     .eslogan{
         @include texto (2.9em, $font-color, center, normal, normal, $courgette);
         @include box-model (0% 0%, 0%, 100%, 19vh);
-        @include position (absolute, none, 15%, none, none, 2);
+        @include position (absolute, none, 15%, none, none, 6);
         @include flexbox (center, center, normal);
     }
     

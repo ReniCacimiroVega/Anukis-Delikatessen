@@ -46,6 +46,11 @@
         color: $third;
         font-weight: bold;
     }
+
+    .modal-header, .modal-footer{
+        background-color: $primary;
+        color: $secondary;
+    }
     
     .cont-puestos{
         @include grid ( 5% 20% 5% 20% 5% 20%, 100%, center, center, none, none);

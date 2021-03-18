@@ -49,6 +49,10 @@
             margin: 0% 0% 5% 0%;
         }
                 }
+    .modal-header, .modal-footer{
+        background-color: $primary;
+        color: $secondary;
+    }
     
     .label-form-vender{
         @include texto (1.2em, $third, normal, normal, bold, $montserrat);
