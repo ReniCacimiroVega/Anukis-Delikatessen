@@ -1,13 +1,12 @@
 /*Vender Anukis*/
     .vender{
-        @include background (130% 160%, none, 100%, url("../imagenes/fondos/fondo-vender3.jpg"));
-        margin-top: -10%;
+        @include background (100% 100%, none, 100%, url("../imagenes/fondos/fondo-vender3.jpg"));
+        margin-top: 7%;
     }
     
     .section-vender{
         @include grid ( 100%, 100%, center, center, none, none);
-        height: 85vh;
-        width: 100%;
+        height: 110vh;
     }
     
     .div-h4-vender{
@@ -16,7 +15,7 @@
     }
     
     .h4uno{
-        @include box-model( 3% 3% 0% 3%, 10% 1% 0% 0%, 60%, 22%);
+        @include box-model( 3% 3% 0% 3%, 20% 1% 10% 0%, 70%, 30vh);
         @include texto (1.3em, $bg-color, center, normal, bold, $montserrat);
     
         text-transform: uppercase;
@@ -25,46 +24,56 @@
         position: relative;
     }
     
-    
     .boton-formulario{
-        @include box-model(0%, 0% 0% 0% 0%, 80%, 3em);
-        @include texto (1.5em, $third, center, normal, normal, $lato);
-        @include position (relative, -150%, none, 10%, none, 1);
+        @include box-model(0%, 0% 0% 0% 0%, 80%, 2.8em);
+        @include texto (2em, $third, center, normal, normal, $lato);
+        @include position (relative, -195%, none, 10%, none, 1);
         border-radius: 10px;
         border: none;
     }
     
-    
     /* MODAL DEL FORMULARIO */
-
-    .form-vender{
-        @include grid ( 100%, none, space-around, center, none, none);
-        width: 100%;
-        font-size: 1.2em;
     
+    .form-vender{
+        input[type=text], input[type=email], textarea{
+            font-size: 1em;
+            font-weight: normal;
+            width: 100%;
+                
+        }
+        input[type=text]{
+            margin: 0% 0% 5% 0%;
+        }
+
+        input[type=email]{
+            margin: 0% 0% 4% 0%;
+        }
+                }
+    
+                .modal-header, .modal-footer{
+                    background-color: $primary;
+                    color: $secondary;
+                }
+
     .label-form-vender{
+        font-size: 1.2em;
         color: $third;
         font-weight: bold;
     }
-
+    
     .modal-header, .modal-footer{
         background-color: $primary;
         color: $secondary;
     }
     
     .cont-puestos{
-        @include grid ( 5% 20% 5% 20% 5% 20%, 100%, center, center, none, none);
+        @include grid ( 7% 24% 7% 24% 7% 24%, 100%, center, center, none, none);
         color: $third;
-        margin: 0% -10%;
-    }
-
-    input[type=email]{
-        margin-top: 5%;
+        font-weight: bold;
     }
     
     .label-turnos{
-        margin-top: -3%;
-        margin-bottom: -5%;
+        margin-bottom: 3%
     }
     
     option{
@@ -73,7 +82,7 @@
     }
     
     .text-form-vender{
-        margin-top: 6%;
+        margin-top: 6%
     }
     
     .cont-notificaciones{
@@ -81,6 +90,4 @@
         font-size: 1.1em;
         color: $third;
     
-    }
-
     }

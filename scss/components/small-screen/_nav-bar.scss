@@ -7,7 +7,7 @@
         @include flexbox (space-around, center, normal);
         @include box-model(0%, 0%, 100%, 12.5%);
         @include texto (1em, none, center, normal, normal, $montserrat);
-        @include position (fixed, 0%, none, none, none, 5);
+        @include position (fixed, 0%, none, none, none, 7);
         background-color: $primary;
     }
     

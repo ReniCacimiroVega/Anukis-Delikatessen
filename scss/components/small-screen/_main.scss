@@ -1,16 +1,17 @@
 /*Header*/
 
     .foto{
+        margin-top: 10%;
         height: 100vh;
         width: 220%;
     }
 
     .foto1{
-        margin-left: -30%;
+        margin-left: -50%;
     }
 
     .foto2{
-        margin-left: -65%;
+        margin-left: -55%;
     }
 
     .foto3{
@@ -33,10 +34,12 @@
     }
     
     .eslogan{
-        @include texto (2.9em, $font-color, center, normal, normal, $courgette);
-        @include box-model (0% 0%, 0%, 100%, 19vh);
+        @include texto (2.6em, $font-color, center, normal, normal, $courgette);
+        @include box-model (0% 0%, 0%, 100%, 23vh);
         @include position (absolute, none, 15%, none, none, 6);
         @include flexbox (center, center, normal);
+        background-color: $third;
+        opacity: 0.65;
     }
     
     .nosotros{

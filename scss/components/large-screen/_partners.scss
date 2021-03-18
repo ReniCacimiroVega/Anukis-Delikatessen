@@ -22,7 +22,7 @@
     }
     
     .cont-fotos-socios{
-        @include grid (34.3% 25.3% 34.3%, 100%, center, center, none, none);
+        @include grid (33.7% 26.3% 33.7%, 100%, center, center, none, none);
         column-gap: 3%;
     }
 
@@ -59,7 +59,7 @@
 
     .foto-socios5{
         background-image: url("../imagenes/fotos-de-alex/foto-torta.webp");
-        height: 50vh;
+        height: 45vh;
     }
     
     .foto-socios6{
