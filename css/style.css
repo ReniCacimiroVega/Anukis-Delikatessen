@@ -2239,7 +2239,7 @@ body {
     font-weight: normal;
     font-family: "Courgette", cursive;
     padding: 0% 0%;
-    margin: 0%;
+    margin: -10% 0% 3% 0%;
     width: 90%;
     height: 20vh;
     position: absolute;
@@ -2402,6 +2402,9 @@ body {
   #check:checked ~ ul {
     left: 0%;
   }
+  #check:checked ~ ul .fa-arrow-right {
+    font-size: 2em;
+  }
 
   .checkboton {
     font-size: 2em;
@@ -2417,6 +2420,11 @@ body {
     font-size: 2em;
     color: #ffff6c;
     cursor: pointer;
+  }
+
+  .fa-arrow-right {
+    display: none;
+    font-size: 0;
   }
 
   #check {
@@ -2446,7 +2454,7 @@ body {
     font-weight: none;
     font-family: "Lato", sans-serif;
     padding: 0em;
-    margin: 20% 0% 0% 0%;
+    margin: 5% 0% 0% 0%;
     width: 100%;
     height: 1em;
     display: flex;
@@ -2721,13 +2729,13 @@ body {
 
   .article-socios h3 {
     font-size: 1.9em;
-    margin: 9% 0%;
+    margin: 9% 0% 3% 0%;
   }
 
   .article-socios p {
-    font-size: 1.2em;
+    font-size: 1.4em;
     line-height: 30px;
-    margin: 30% 10% 5% 10%;
+    margin: 18% 10% 5% 10%;
   }
 
   .cont-fotos-socios {
@@ -2742,8 +2750,8 @@ body {
   }
 
   .foto-socios {
-    height: 22em;
-    background-size: 100% 100%;
+    height: 32em;
+    background-size: 90% 100%;
     background-position: center;
     background-repeat: no-repeat;
     transition: 1.1s;
@@ -2758,7 +2766,7 @@ body {
   }
 
   .foto-socios2, .foto-socios5 {
-    height: 17.5em;
+    height: 26em;
     width: 75%;
     margin: 0% 0% 0% 12%;
   }
@@ -2773,6 +2781,7 @@ body {
 
   .foto-socios4 {
     background-image: url("../imagenes/fotos-de-alex/foto-alex-2.webp");
+    margin-top: 5%;
   }
 
   .foto-socios5 {
@@ -2905,7 +2914,7 @@ body {
     padding: 0%;
     margin: 0%;
     width: 80%;
-    height: 40vh;
+    height: 60vh;
     border-radius: 3px;
   }
 
@@ -3202,7 +3211,7 @@ body {
     font-weight: none;
     font-family: "Lato", sans-serif;
     padding: 0em;
-    margin: 20% 0% 0% 0%;
+    margin: 5% 0% 0% 0%;
     width: 100%;
     height: 1em;
     display: flex;

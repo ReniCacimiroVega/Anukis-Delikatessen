@@ -26,7 +26,7 @@
     // Eslogan
     .eslogan{
         @include texto (7vh, $font-color, center, normal, normal, $courgette);
-        @include box-model (0% 0%, 0%, 90%, 20vh);
+        @include box-model (0% 0%, -10% 0% 3% 0%, 90%, 20vh);
         @include position (absolute, none, 10%, none, none, 6);
         @include flexbox (center, center, normal);
         border-radius:30px;

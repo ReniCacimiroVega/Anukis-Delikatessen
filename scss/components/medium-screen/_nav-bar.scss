@@ -64,6 +64,11 @@
     
     #check:checked ~ ul {
         left: 0%;
+
+            .fa-arrow-right{
+                font-size: 2em;
+
+            }
     }
     
     .checkboton{
@@ -80,6 +85,11 @@
         font-size: 2em;
         color: $secondary;
         cursor: pointer;
+    }
+
+    .fa-arrow-right{
+        display: none;
+        font-size: 0;
     }
     
     #check{
