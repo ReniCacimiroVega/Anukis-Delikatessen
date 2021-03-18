@@ -2529,9 +2529,10 @@ body {
     margin: 0% 0% 0% 0%;
     color: black;
     background-color: whitesmoke;
-    opacity: 0.6;
     border-radius: 20px;
-    font-size: 1.4em;
+    font-size: 2em;
+    position: relative;
+    bottom: 40%;
   }
 
   .carrousel-productos {
