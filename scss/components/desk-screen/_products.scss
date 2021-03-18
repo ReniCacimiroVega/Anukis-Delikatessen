@@ -12,6 +12,15 @@
                 text-align: center;
                 margin-top: 10%;
             }
+
+            h5{
+                margin: 0% 0% -20% 0%;
+                color: $third;
+                background-color: $font-color;
+                opacity: 0.6;
+                border-radius: 20px;
+                font-size: 1.4em;
+            }
     }
 
     .carrousel-productos{
@@ -30,7 +39,7 @@
 
     .fotos-productos{
         height: 46vh;
-        margin: 0% 0% 0% -30%;
+        width: 100%;
     }
 
     .boton-prev-sig{

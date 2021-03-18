@@ -340,6 +340,14 @@ body {
     text-align: center;
     margin-top: 10%;
   }
+  .contenedor-productos h5 {
+    margin: 0% 0% -20% 0%;
+    color: black;
+    background-color: whitesmoke;
+    opacity: 0.6;
+    border-radius: 20px;
+    font-size: 1.4em;
+  }
 
   .carrousel-productos {
     margin: 10% 0% 0% 10%;
@@ -357,7 +365,7 @@ body {
 
   .fotos-productos {
     height: 46vh;
-    margin: 0% 0% 0% -30%;
+    width: 100%;
   }
 
   .boton-prev-sig {
@@ -878,7 +886,7 @@ body {
     bottom: none;
     left: none;
     right: none;
-    z-index: 5;
+    z-index: 7;
     background-color: #4F2A1C;
   }
 
@@ -1056,6 +1064,14 @@ body {
     text-align: center;
     margin-top: 10%;
   }
+  .contenedor-productos h5 {
+    margin: 0% 0% -20% 0%;
+    color: black;
+    background-color: whitesmoke;
+    opacity: 0.6;
+    border-radius: 20px;
+    font-size: 1.4em;
+  }
 
   .carrousel-productos {
     margin: 10% 0% 0% 10%;
@@ -1073,7 +1089,7 @@ body {
 
   .fotos-productos {
     height: 46vh;
-    margin: 0% 0% 0% -30%;
+    width: 100%;
   }
 
   .boton-prev-sig {
@@ -1771,7 +1787,15 @@ body {
   .contenedor-productos h3 {
     text-align: center;
     margin-top: 10%;
-    font-size: 1.3em;
+    font-size: 1.1em;
+  }
+  .contenedor-productos h5 {
+    margin: 0% 0% -20% 0%;
+    color: black;
+    background-color: whitesmoke;
+    opacity: 0.6;
+    border-radius: 20px;
+    font-size: 1.4em;
   }
 
   .carrousel-productos {
@@ -1790,7 +1814,7 @@ body {
 
   .fotos-productos {
     height: 46vh;
-    margin: 0% 0% 0% -30%;
+    width: 100%;
   }
 
   .boton-prev-sig {
