@@ -341,7 +341,7 @@ body {
     margin-top: 10%;
     font-size: 1.3em;
   }
-  .contenedor-productos h5 {
+  .contenedor-productos h4 {
     margin: 0% 0% -20% 0%;
     color: black;
     background-color: whitesmoke;
@@ -1070,7 +1070,7 @@ body {
     text-align: center;
     margin-top: 10%;
   }
-  .contenedor-productos h5 {
+  .contenedor-productos h4 {
     margin: 0% 0% -20% 0%;
     color: black;
     background-color: whitesmoke;
@@ -1793,7 +1793,7 @@ body {
     margin-top: 10%;
     font-size: 1.3em;
   }
-  .contenedor-productos h5 {
+  .contenedor-productos h4 {
     margin: 0% 0% -20% 0%;
     color: black;
     background-color: whitesmoke;
@@ -2525,14 +2525,13 @@ body {
     margin-top: 5%;
     font-size: 1.7em;
   }
-  .contenedor-productos h5 {
+
+  h4 {
     margin: 0% 0% 0% 0%;
     color: black;
     background-color: whitesmoke;
     border-radius: 20px;
     font-size: 2em;
-    position: relative;
-    bottom: 40%;
   }
 
   .carrousel-productos {
