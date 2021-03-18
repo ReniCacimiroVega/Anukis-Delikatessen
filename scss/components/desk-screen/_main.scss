@@ -1,15 +1,12 @@
 /* Header*/
 
     // Carrousel
-    .carrousel-pequeño{
-        display: none;
+    .carrousel-grande{
+        z-index: 5;
     }
     .foto{
         height: 120vh;
         width: 100%;
-    }
-    .foto-dos-del-inicio{
-        margin-top: 10%;
     }
     
     /*Botones*/

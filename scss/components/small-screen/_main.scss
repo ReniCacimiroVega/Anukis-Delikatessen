@@ -1,9 +1,14 @@
 /*Header*/
+    .carrousel-grande{
+        z-index: 5;
+    }
 
     .foto{
         margin-top: 10%;
-        height: 100vh;
+        height: 95vh;
         width: 220%;
+        display: flex;
+        z-index: 6;
     }
 
     .foto1{
@@ -20,7 +25,7 @@
     
     /*Botones*/
     .arriba-boton{
-        @include position (fixed, none, 1%, 5%, none, 10);
+        @include position (fixed, none, 1%, 5%, none, 4);
         @include texto (2em, $secondary, center, normal, normal, none);
         @include box-model (none, none, 1.7em, 1.6em);
         border-radius: 50px;
@@ -35,10 +40,11 @@
     
     .eslogan{
         @include texto (2.6em, $font-color, center, normal, normal, $courgette);
-        @include box-model (0% 0%, 0%, 100%, 23vh);
-        @include position (absolute, none, 15%, none, none, 6);
+        @include box-model (0% 0%, 0%, 80%, 20vh);
+        @include position (absolute, none, 10%, none, none, 6);
         @include flexbox (center, center, normal);
         background-color: $third;
+        border-radius: 30px;
         opacity: 0.65;
     }
     

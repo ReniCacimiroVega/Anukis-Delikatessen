@@ -24,17 +24,13 @@ body {
 /*Estilo de la versión big screen*/
 @media only screen and (min-width: 1251px) {
   /* Header*/
-  .carrousel-pequeño {
-    display: none;
+  .carrousel-grande {
+    z-index: 5;
   }
 
   .foto {
     height: 120vh;
     width: 100%;
-  }
-
-  .foto-dos-del-inicio {
-    margin-top: 10%;
   }
 
   /*Botones*/
@@ -753,12 +749,7 @@ body {
 @media only screen and (min-width: 951px) and (max-width: 1251px) {
   /* Header*/
   .carrousel-grande {
-    background-color: black;
     z-index: 5;
-  }
-  .carrousel-grande p {
-    color: whitesmoke;
-    z-index: 6;
   }
 
   .foto {
@@ -1480,6 +1471,10 @@ body {
 /*Estilo de la versión large screen*/
 @media only screen and (min-width: 780px) and (max-width: 951px) {
   /* Header*/
+  .carrousel-grande {
+    z-index: 5;
+  }
+
   .foto {
     margin: 10% 0% 0% 0%;
     height: 90vh;
@@ -2200,6 +2195,10 @@ body {
 /*Estilo de la versión medium screen*/
 @media only screen and (min-width: 560px) and (max-width: 780px) {
   /*Header*/
+  .carrousel-grande {
+    z-index: 5;
+  }
+
   .foto {
     margin-top: 10%;
     height: 90vh;
@@ -2233,7 +2232,7 @@ body {
   }
 
   .eslogan {
-    font-size: 8vh;
+    font-size: 7vh;
     color: whitesmoke;
     text-align: center;
     font-style: normal;
@@ -2241,11 +2240,11 @@ body {
     font-family: "Courgette", cursive;
     padding: 0% 0%;
     margin: 0%;
-    width: 100%;
+    width: 90%;
     height: 20vh;
     position: absolute;
     top: none;
-    bottom: 16%;
+    bottom: 10%;
     left: none;
     right: none;
     z-index: 6;
@@ -2253,6 +2252,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: normal;
+    border-radius: 30px;
     opacity: 0.65;
     background-color: black;
   }
@@ -2297,7 +2297,7 @@ body {
   }
 
   .texto-quienes-somos {
-    font-size: 1.3em;
+    font-size: 1.4em;
   }
 
   /*Menú*/
@@ -2742,7 +2742,7 @@ body {
   }
 
   .foto-socios {
-    height: 25em;
+    height: 22em;
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -2758,7 +2758,7 @@ body {
   }
 
   .foto-socios2, .foto-socios5 {
-    height: 20em;
+    height: 17.5em;
     width: 75%;
     margin: 0% 0% 0% 12%;
   }
@@ -2934,10 +2934,16 @@ body {
 /*Estilo de la versión small screen*/
 @media only screen and (min-width: 280px) and (max-width: 560px) {
   /*Header*/
+  .carrousel-grande {
+    z-index: 5;
+  }
+
   .foto {
     margin-top: 10%;
-    height: 100vh;
+    height: 95vh;
     width: 220%;
+    display: flex;
+    z-index: 6;
   }
 
   .foto1 {
@@ -2959,7 +2965,7 @@ body {
     bottom: 1%;
     left: 5%;
     right: none;
-    z-index: 10;
+    z-index: 4;
     font-size: 2em;
     color: #ffff6c;
     text-align: center;
@@ -2988,11 +2994,11 @@ body {
     font-family: "Courgette", cursive;
     padding: 0% 0%;
     margin: 0%;
-    width: 100%;
-    height: 23vh;
+    width: 80%;
+    height: 20vh;
     position: absolute;
     top: none;
-    bottom: 15%;
+    bottom: 10%;
     left: none;
     right: none;
     z-index: 6;
@@ -3001,6 +3007,7 @@ body {
     align-items: center;
     flex-direction: normal;
     background-color: black;
+    border-radius: 30px;
     opacity: 0.65;
   }
 
@@ -3442,7 +3449,7 @@ body {
   }
 
   .foto-socios {
-    height: 25em;
+    height: 22em;
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -3458,7 +3465,7 @@ body {
   }
 
   .foto-socios2, .foto-socios5 {
-    height: 20em;
+    height: 17.5em;
     width: 75%;
     margin: 0% 0% 0% 12%;
   }
@@ -3655,7 +3662,7 @@ body {
     padding: 0%;
     margin: 0%;
     width: 80%;
-    height: 40vh;
+    height: 60vh;
     border-radius: 3px;
   }
 
