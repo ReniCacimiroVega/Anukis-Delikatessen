@@ -1,17 +1,32 @@
+/*Menú*/
 
-    /*Menú*/
+//Logos:
     .foto-nav-pant-grande{
         margin-bottom: 10%;
         margin-left: 3%;
         max-height:15vh;
         min-width: 20%;
+        
+        &:hover{
+            animation: bounce;
+            animation-duration: 1.2s;
+    }
     }
     
-    .foto-nav-pant-grande:hover{
-        animation: bounce;
-        animation-duration: 1.2s;
+    .foto-nav-pant-peque{
+        display: none;
     }
     
+    #check{
+        display: none;
+    }
+    
+    .fa-search, .fa-bars{
+        font-size: 0%;
+    }
+
+
+//Nav:
     nav{
         @include flexbox (space-around, flex-end, normal);
         @include box-model(0%, 0%, 100%, 22vh);
@@ -31,7 +46,6 @@
     }
     
     ul li a {
-        
         @include texto (1.1em, $secondary, center, normal, 800, $montserrat);
         text-decoration: none;
         @include box-model(4%, 0% 0.6em, 20%, 3px);
@@ -44,15 +58,4 @@
         transition: 0.7s;
     }
     
-    .foto-nav-pant-peque{
-        display: none;
-    }
-    
-    #check{
-        display: none;
-    }
-    
-    .fa-search, .fa-bars{
-        font-size: 0%;
-    }
     

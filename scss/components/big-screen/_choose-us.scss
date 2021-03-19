@@ -1,9 +1,13 @@
+/*Elegirnos*/
+
+// General:
     .elegirnos{
         @include grid (100%, none, center, center, none, none);
         @include background (100% 100%, 51em, 100%, url("../imagenes/fondos/fondo-elegirnos4.jpg"));
         margin-top: 0%;
     }
 
+// Cajas:
     .motivos{
         @include box-model(0% 0% 8% 0%, -4% 10% 10% 10%, 80%, none);
         @include texto (1.3em, $font-color, center, normal, normal, $lato);
@@ -15,13 +19,16 @@
                 opacity: 0.6;
             }
     }
-    
+
+    .parrafo-uno{
+        font-weight: bold;
+    }
+
+
+// Logos:
     .loguitos{
         font-size: 3em;
         color: $secondary;
         margin:10% 3% 0% 4%;
     }
 
-    .parrafo-uno{
-        font-weight: bold;
-    }

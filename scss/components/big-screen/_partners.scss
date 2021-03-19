@@ -1,26 +1,30 @@
-
-
-    /*Socios de Anukis*/
+/*Socios de Anukis*/
     .titulo-socios{
         margin-bottom: -10%;
     }
     
-    .article-socios h3, p{
-        @include grid (100%, 100%, center, center, none, none);
-        text-align: center;
-        margin: 5%;
+    
+//Texto:    
+    .article-socios{
+            h3, p{
+                @include grid (100%, 100%, center, center, none, none);
+                text-align: center;
+                margin: 5%;
+            }
+
+            h3{
+                font-size: 2em;
+            }
+
+            p{
+                font-size: 1.2em;
+                line-height: 30px;
+                margin: 3% 10% 5% 10%;
+            }
     }
     
-    .article-socios h3{
-        font-size: 2em;
-    }
-    
-    .article-socios p{
-        font-size: 1.2em;
-        line-height: 30px;
-        margin: 3% 10% 5% 10%
-    }
-    
+
+//Fotos:
     .cont-fotos-socios{
         @include grid (34.3% 25.3% 34.3%, 100%, center, center, none, none);
         column-gap: 3%;

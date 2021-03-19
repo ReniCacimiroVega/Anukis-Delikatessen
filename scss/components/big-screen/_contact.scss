@@ -1,9 +1,9 @@
+/* Contacto */
 
-    /* Contacto */
+    // General de la sección:
     .contacto{
         background-image: url("../imagenes/fondos/foto-contact.jpg");
         background-size: 100% 100%;
-
     }
     
     .cont-form-contacto{
@@ -17,6 +17,9 @@
         height: 62vh;
     }
     
+
+
+    // Inputs y textarea:
     input[type=text], textarea{
         @include box-model(0%, 10% 0%, 100%, 3.8em);
         @include texto (1.1em, $third, none, normal, bold, $lato);
@@ -39,13 +42,13 @@
         }
     }
     
-    
     ::-webkit-input-placeholder{
         color: $third;
         font-size: 1.2em;
     }
     
-    
+
+    // Botones del formulario: 
     .cont-botones{
         @include grid ( 50% 50%, 100%, center, center, none, none);
         margin-top: 8%;
@@ -65,7 +68,10 @@
         @include input-style (none, none, none, none, $font-color, $third, 0.8);
         transition: 0.6s;
     }
-    
+
+
+
+    // Iframe de ubicación:
     .ubicacion{
         @include box-model(0%, 0% 0% 18% 0%, 64vh, 70vh);
         border-radius: 3px;

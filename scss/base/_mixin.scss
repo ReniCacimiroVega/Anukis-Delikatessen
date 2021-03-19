@@ -65,3 +65,10 @@
     right:$right;
     z-index: $z-index;  
 }
+
+//Sombras
+@mixin sombras{
+    -webkit-box-shadow: 11px 15px 10px -3px rgba(51,51,51,1);
+    -moz-box-shadow: 11px 15px 10px -3px rgba(51,51,51,1);
+    box-shadow: 11px 15px 10px -3px rgba(51,51,51,1);
+}
