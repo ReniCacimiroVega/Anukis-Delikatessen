@@ -1,4 +1,6 @@
-    /*Productos*/
+/*Productos*/
+
+//General y texto:
     .contenedor-productos{
         @include grid (28% 28% 28%, 100%, space-around, center, normal, wrap);
         margin-bottom: 5%;
@@ -17,6 +19,8 @@
             }
     }
 
+    
+// Carrousel de productos:
     .carrousel-productos{
         @include box-model (0%, 10% 0% 0% 10%, 80%, normal);
     }
@@ -31,6 +35,8 @@
         @include box-model (0%, 0%, 100%, 46vh);
     }
 
+
+// Botones:
     .boton-prev-sig{
         background-color: transparent;
         border: transparent;

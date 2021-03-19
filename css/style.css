@@ -33,7 +33,7 @@ body {
     width: 100%;
   }
 
-  /*Botones*/
+  /*Boton ir arriba*/
   .arriba-boton {
     position: fixed;
     top: none;
@@ -105,11 +105,11 @@ body {
     margin: 6% 7%;
     width: 100%;
     height: 70%;
-    grid-gap: 7%;
-    text-align: center;
     -webkit-box-shadow: 11px 15px 10px -3px #333333;
     -moz-box-shadow: 11px 15px 10px -3px #333333;
     box-shadow: 11px 15px 10px -3px #333333;
+    grid-gap: 7%;
+    text-align: center;
   }
 
   .debajo-del-eslogan {
@@ -132,10 +132,21 @@ body {
     max-height: 15vh;
     min-width: 20%;
   }
-
   .foto-nav-pant-grande:hover {
     animation: bounce;
     animation-duration: 1.2s;
+  }
+
+  .foto-nav-pant-peque {
+    display: none;
+  }
+
+  #check {
+    display: none;
+  }
+
+  .fa-search, .fa-bars {
+    font-size: 0%;
   }
 
   nav {
@@ -187,24 +198,11 @@ body {
     width: 20%;
     height: 3px;
   }
-
   ul li a:hover {
     color: #4F2A1C;
     background-color: #ffff6c;
     border-radius: 3px;
     transition: 0.7s;
-  }
-
-  .foto-nav-pant-peque {
-    display: none;
-  }
-
-  #check {
-    display: none;
-  }
-
-  .fa-search, .fa-bars {
-    font-size: 0%;
   }
 
   /* Titulos de secciones */
@@ -267,6 +265,7 @@ body {
     transition: transform 0.8s;
   }
 
+  /*Elegirnos*/
   .elegirnos {
     display: grid;
     grid-template-columns: 100%;
@@ -312,14 +311,14 @@ body {
     opacity: 0.7;
   }
 
+  .parrafo-uno {
+    font-weight: bold;
+  }
+
   .loguitos {
     font-size: 3em;
     color: #ffff6c;
     margin: 10% 3% 0% 4%;
-  }
-
-  .parrafo-uno {
-    font-weight: bold;
   }
 
   /*Productos*/
@@ -327,8 +326,10 @@ body {
     display: grid;
     grid-template-columns: 28% 28% 28%;
     grid-template-rows: 100%;
-    flex-wrap: wrap;
+    align-items: center;
     justify-content: space-around;
+    flex-direction: normal;
+    flex-wrap: wrap;
     margin-bottom: 5%;
     margin-top: -2%;
   }
@@ -338,31 +339,43 @@ body {
     font-size: 1.3em;
   }
   .contenedor-productos h4 {
-    margin: 0% 0% -20% 0%;
-    color: black;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
     background-color: whitesmoke;
+    color: black;
     opacity: 0.6;
+    margin: 0% 0% -20% 0%;
     border-radius: 20px;
     font-size: 1.4em;
   }
 
   .carrousel-productos {
+    padding: 0%;
     margin: 10% 0% 0% 10%;
     width: 80%;
+    height: normal;
   }
 
   .cont-carrousel-y-h3 {
-    background-color: gainsboro;
-    width: 100%;
-    height: 80vh;
     -webkit-box-shadow: 11px 15px 10px -3px #333333;
     -moz-box-shadow: 11px 15px 10px -3px #333333;
     box-shadow: 11px 15px 10px -3px #333333;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: normal;
+    height: 80vh;
+    width: 100%;
+    background-image: none;
+    background-color: gainsboro;
   }
 
   .fotos-productos {
-    height: 46vh;
+    padding: 0%;
+    margin: 0%;
     width: 100%;
+    height: 46vh;
   }
 
   .boton-prev-sig {
@@ -371,18 +384,27 @@ body {
   }
 
   .boton-encargar {
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    background-color: firebrick;
+    color: whitesmoke;
+    opacity: 1;
     width: 100%;
     height: 10vh;
     font-size: 1.7em;
-    background-color: firebrick;
-    color: whitesmoke;
-    border: none;
   }
   .boton-encargar:hover {
+    border-top: 3px solid firebrick;
+    border-bottom: 3px solid firebrick;
+    border-left: 3px solid firebrick;
+    border-right: 3px solid firebrick;
     background-color: whitesmoke;
     color: firebrick;
+    opacity: 1;
+    background-color: whitesmoke;
     font-weight: bold;
-    border: 3px solid firebrick;
   }
 
   /*Socios de Anukis*/
@@ -390,7 +412,7 @@ body {
     margin-bottom: -10%;
   }
 
-  .article-socios h3, p {
+  .article-socios h3, .article-socios p {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 100%;
@@ -401,12 +423,10 @@ body {
     text-align: center;
     margin: 5%;
   }
-
-  .article-socios h3 {
+  .article-socios h3 h3, .article-socios p h3 {
     font-size: 2em;
   }
-
-  .article-socios p {
+  .article-socios h3 p, .article-socios p p {
     font-size: 1.2em;
     line-height: 30px;
     margin: 3% 10% 5% 10%;
@@ -471,7 +491,7 @@ body {
     background-image: url("../imagenes/fondos/gatoycesta3.webp");
   }
 
-  .section-vender {
+  .article-vender {
     display: grid;
     grid-template-columns: 34% 45%;
     grid-template-rows: 100%;
@@ -481,8 +501,7 @@ body {
     flex-wrap: none;
     grid-gap: 1%;
   }
-
-  .section-vender h3 {
+  .article-vender h3 {
     padding: 0%;
     margin: 10% 1% 20% 0%;
     width: 100%;
@@ -497,8 +516,7 @@ body {
     border-right: 0.1em solid black;
     background-color: whitesmoke;
   }
-
-  h3 p {
+  .article-vender h3 p {
     display: none;
   }
 
@@ -519,7 +537,6 @@ body {
     top: 17%;
   }
 
-  /* MODAL DEL FORMULARIO */
   .form-vender input[type=text], .form-vender input[type=email], .form-vender textarea {
     font-size: 0.7em;
     font-weight: normal;
@@ -530,13 +547,7 @@ body {
   .form-vender input[type=email] {
     margin: 0% 0% 5% 0%;
   }
-
-  .modal-header, .modal-footer {
-    background-color: #4F2A1C;
-    color: #ffff6c;
-  }
-
-  .label-form-vender {
+  .form-vender .label-form-vender {
     font-size: 1.2em;
     color: black;
     text-align: normal;
@@ -544,8 +555,7 @@ body {
     font-weight: bold;
     font-family: "Montserrat", sans-serif;
   }
-
-  .cont-puestos {
+  .form-vender .cont-puestos {
     display: grid;
     grid-template-columns: 5% 20% 5% 20% 5% 20%;
     grid-template-rows: 100%;
@@ -561,12 +571,10 @@ body {
     font-family: "Lato", sans-serif;
     margin: 3% 0% 5% 0%;
   }
-
-  .label-turnos {
+  .form-vender .label-turnos {
     margin-bottom: 3%;
   }
-
-  option {
+  .form-vender option {
     font-size: 1.1em;
     color: black;
     text-align: center;
@@ -574,12 +582,10 @@ body {
     font-weight: normal;
     font-family: "Lato", sans-serif;
   }
-
-  .text-form-vender {
+  .form-vender .text-form-vender {
     margin-top: 6%;
   }
-
-  .cont-notificaciones {
+  .form-vender .cont-notificaciones {
     display: grid;
     grid-template-columns: 5% 90%;
     grid-template-rows: 100%;
@@ -593,6 +599,11 @@ body {
     font-style: normal;
     font-weight: normal;
     font-family: "Lato", sans-serif;
+  }
+
+  .modal-header, .modal-footer {
+    background-color: #4F2A1C;
+    color: #ffff6c;
   }
 
   /* Contacto */
@@ -922,7 +933,6 @@ body {
     width: 20%;
     height: 3px;
   }
-
   ul li a:hover {
     color: #4F2A1C;
     background-color: #ffff6c;

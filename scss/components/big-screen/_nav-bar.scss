@@ -10,7 +10,7 @@
         &:hover{
             animation: bounce;
             animation-duration: 1.2s;
-    }
+        }
     }
     
     .foto-nav-pant-peque{
@@ -49,13 +49,11 @@
         @include texto (1.1em, $secondary, center, normal, 800, $montserrat);
         text-decoration: none;
         @include box-model(4%, 0% 0.6em, 20%, 3px);
+
+            &:hover{    
+                color: $primary;
+                background-color: $secondary;
+                border-radius: 3px;
+                transition: 0.7s;
+            }
     }
-    
-    ul li a:hover{
-        color: $primary;
-        background-color: $secondary;
-        border-radius: 3px;
-        transition: 0.7s;
-    }
-    
-    

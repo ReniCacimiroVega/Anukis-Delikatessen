@@ -1,4 +1,6 @@
-    /* Titulos de secciones */
+/* Titulos de secciones */
+
+//Animacion:
     .animacion-titulo:hover .contenedor1{
         transform: translate(-20px, -20px);
     }
@@ -7,6 +9,8 @@
         transform: translate(-40px, -40px);
     }
     
+    
+//Titulo y cajas:
     .titulo-de-secciones{
         @include texto (7em, $third, center, normal, bold, $montserrat);
         @include box-model(0.25em, 0% auto, 60%, 1em);
@@ -28,4 +32,3 @@
         background-color: $third;
         transition: transform 0.8s;
     }
-

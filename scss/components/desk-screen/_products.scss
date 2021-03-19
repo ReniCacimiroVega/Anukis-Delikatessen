@@ -1,10 +1,8 @@
-    /*Productos*/
+/*Productos*/
+
+//General y texto:
     .contenedor-productos{
-        display: grid;
-        grid-template-columns: 28% 28% 28%;
-        grid-template-rows: 100%;
-        flex-wrap: wrap;
-        justify-content: space-around;
+        @include grid (28% 28% 28%, 100%, space-around, center, normal, wrap);
         margin-bottom: 5%;
         margin-top: -2%;
 
@@ -12,55 +10,49 @@
                 text-align: center;
                 margin-top: 10%;
                 font-size: 1.3em;
-
             }
 
             h4{
+                @include input-style (none, none, none, none, $font-color, $third, 0.6);
                 margin: 0% 0% -20% 0%;
-                color: $third;
-                background-color: $font-color;
-                opacity: 0.6;
                 border-radius: 20px;
                 font-size: 1.4em;
             }
     }
 
+
+// Carrousel de productos:
     .carrousel-productos{
-        margin: 10% 0% 0% 10%;
-        width: 80%;
+        @include box-model (0%, 10% 0% 0% 10%, 80%, normal);
     }
 
     .cont-carrousel-y-h3{
+        @include sombras;
+        @include background (normal, 80vh, 100%, none);
         background-color: $bg-color-two;
-        width: 100%;
-        height: 80vh;  
-        -webkit-box-shadow: 11px 15px 10px -3px rgba(51,51,51,1);
-        -moz-box-shadow: 11px 15px 10px -3px rgba(51,51,51,1);
-        box-shadow: 11px 15px 10px -3px rgba(51,51,51,1);
     }
 
     .fotos-productos{
-        height: 46vh;
-        width: 100%;
+        @include box-model (0%, 0%, 100%, 46vh);
     }
 
+
+// Botones:
     .boton-prev-sig{
         background-color: transparent;
         border: transparent;
     }
 
     .boton-encargar{
+        @include input-style (none, none, none, none, $buttons, $font-color, 1);
         width: 100%;
         height: 10vh;
         font-size: 1.7em;
-        background-color:firebrick;
-        color: $font-color;
-        border: none;
 
             &:hover{
+                @include input-style (3px solid $buttons, 3px solid $buttons, 3px solid $buttons, 
+                3px solid $buttons, $font-color, $buttons, 1);
                 background-color: $font-color;
-                color: firebrick;
                 font-weight: bold;
-                border: 3px solid firebrick;
             }
     }
