@@ -2,7 +2,9 @@
 
 //General y texto:
     .contenedor-productos{
-        @include flexbox (center, center, flex-wrap);
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
         width: 100%;
 
         h3{
@@ -12,40 +14,39 @@
         }
 
         h4{
-            @include input-style (none, none, none, none, $font-color, $third, 0.6);
             margin: 0% 0% 0% 0%;
+            color: $third;
+            background-color: $font-color;
             border-radius: 20px;
+            opacity: 0.6;
             font-size: 1.2em;
         }
     }
 
-
-// Carrousel de productos:
     .carrousel-productos{
-        @include box-model (0%, 3% 0% 0% 10%, 80%, normal);
+        margin: 3% 0% 0% 10%;
+        width: 80%;
     }
 
     .cont-carrousel-y-h3{
         @include sombras;
-        @include background (normal, 59vh, 80%, none);
-        margin: 7% 0%;
+        @include box-model (0, 7% 0%, 80%, 63.5vh);
         background-color: $bg-color-two;
     }
 
     .fotos-productos{
-        @include box-model (0%, 3% 0% 0% 10%, 100%, 39vh);
+        @include box-model (0, 0, 100%, 39vh);
 
     }
 
-//Botones:
     .boton-prev-sig{
         background-color: transparent;
         border: transparent;
     }
 
     .boton-encargar{
+        @include box-model (0, 0, 100%, 8vh);
         @include input-style (none, none, none, none, $buttons, $font-color, 1);
-        @include box-model (0%, 0%, 100%, 8vh);
         font-size: 1.3em;
 
             &:hover{

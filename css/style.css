@@ -2551,8 +2551,7 @@ body {
   .contenedor-productos {
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: flex-wrap;
+    flex-wrap: wrap;
     width: 100%;
   }
   .contenedor-productos h3 {
@@ -2561,42 +2560,33 @@ body {
     font-size: 1.6em;
   }
   .contenedor-productos h4 {
-    border-top: none;
-    border-bottom: none;
-    border-left: none;
-    border-right: none;
-    background-color: whitesmoke;
-    color: black;
-    opacity: 0.6;
     margin: 0% 0% 0% 0%;
+    color: black;
+    background-color: whitesmoke;
     border-radius: 20px;
+    opacity: 0.6;
     font-size: 20em;
   }
 
   .carrousel-productos {
-    padding: 0%;
     margin: 3% 0% 0% 10%;
     width: 80%;
-    height: normal;
   }
 
   .cont-carrousel-y-h3 {
     -webkit-box-shadow: 11px 15px 10px -3px #333333;
     -moz-box-shadow: 11px 15px 10px -3px #333333;
     box-shadow: 11px 15px 10px -3px #333333;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: normal;
-    height: 79vh;
-    width: 80%;
-    background-image: none;
+    padding: 0;
     margin: 3% 0%;
+    width: 80%;
+    height: 79vh;
     background-color: gainsboro;
   }
 
   .fotos-productos {
-    padding: 0%;
-    margin: 3% 0% 0% 10%;
+    padding: 0;
+    margin: 0;
     width: 100%;
     height: 47vh;
   }
@@ -2607,6 +2597,10 @@ body {
   }
 
   .boton-encargar {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 13vh;
     border-top: none;
     border-bottom: none;
     border-left: none;
@@ -2614,12 +2608,7 @@ body {
     background-color: firebrick;
     color: whitesmoke;
     opacity: 1;
-    padding: 0%;
-    margin: 0%;
-    width: 100%;
-    height: 13vh;
     font-size: 1.3em;
-    border: none;
   }
   .boton-encargar:hover {
     border-top: 3px solid firebrick;
@@ -3272,8 +3261,7 @@ body {
   .contenedor-productos {
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: flex-wrap;
+    flex-wrap: wrap;
     width: 100%;
   }
   .contenedor-productos h3 {
@@ -3282,42 +3270,33 @@ body {
     font-size: 1.6em;
   }
   .contenedor-productos h4 {
-    border-top: none;
-    border-bottom: none;
-    border-left: none;
-    border-right: none;
-    background-color: whitesmoke;
-    color: black;
-    opacity: 0.6;
     margin: 0% 0% 0% 0%;
+    color: black;
+    background-color: whitesmoke;
     border-radius: 20px;
+    opacity: 0.6;
     font-size: 1.2em;
   }
 
   .carrousel-productos {
-    padding: 0%;
     margin: 3% 0% 0% 10%;
     width: 80%;
-    height: normal;
   }
 
   .cont-carrousel-y-h3 {
     -webkit-box-shadow: 11px 15px 10px -3px #333333;
     -moz-box-shadow: 11px 15px 10px -3px #333333;
     box-shadow: 11px 15px 10px -3px #333333;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: normal;
-    height: 59vh;
-    width: 80%;
-    background-image: none;
+    padding: 0;
     margin: 7% 0%;
+    width: 80%;
+    height: 63.5vh;
     background-color: gainsboro;
   }
 
   .fotos-productos {
-    padding: 0%;
-    margin: 3% 0% 0% 10%;
+    padding: 0;
+    margin: 0;
     width: 100%;
     height: 39vh;
   }
@@ -3328,6 +3307,10 @@ body {
   }
 
   .boton-encargar {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 8vh;
     border-top: none;
     border-bottom: none;
     border-left: none;
@@ -3335,10 +3318,6 @@ body {
     background-color: firebrick;
     color: whitesmoke;
     opacity: 1;
-    padding: 0%;
-    margin: 0%;
-    width: 100%;
-    height: 8vh;
     font-size: 1.3em;
   }
   .boton-encargar:hover {
