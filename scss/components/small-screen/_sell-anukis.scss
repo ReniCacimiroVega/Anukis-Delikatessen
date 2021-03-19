@@ -1,10 +1,11 @@
 /*Vender Anukis*/
+//General y texto:
     .vender{
         @include background (100% 100%, none, 100%, url("../imagenes/fondos/fondo-vender3.jpg"));
         margin-top: 7%;
     }
     
-    .section-vender{
+    .article-vender{
         @include grid ( 100%, 100%, center, center, none, none);
         height: 110vh;
     }
@@ -17,13 +18,13 @@
     .h4uno{
         @include box-model( 3% 3% 0% 3%, 20% 1% 10% 0%, 70%, 30vh);
         @include texto (1.3em, $bg-color, center, normal, bold, $montserrat);
-    
         text-transform: uppercase;
         background-color: $third;
         opacity: 0.6;
         position: relative;
     }
-    
+
+//Boton del formulario:
     .boton-formulario{
         @include box-model(0%, 0% 0% 0% 0%, 80%, 2.8em);
         @include texto (2em, $third, center, normal, normal, $lato);
@@ -32,8 +33,7 @@
         border: none;
     }
     
-    /* MODAL DEL FORMULARIO */
-    
+//Formulario:
     .form-vender{
         input[type=text], input[type=email], textarea{
             font-size: 1em;
@@ -48,46 +48,41 @@
         input[type=email]{
             margin: 0% 0% 4% 0%;
         }
-                }
-    
-                .modal-header, .modal-footer{
-                    background-color: $primary;
-                    color: $secondary;
-                }
 
-    .label-form-vender{
-        font-size: 1.2em;
-        color: $third;
-        font-weight: bold;
+        .label-form-vender{
+            font-size: 1.2em;
+            color: $third;
+            font-weight: bold;
+        }
+        
+        .cont-puestos{
+            @include grid ( 7% 24% 7% 24% 7% 24%, 100%, center, center, none, none);
+            color: $third;
+            font-weight: bold;
+        }
+        
+        .label-turnos{
+            margin-bottom: 3%
+        }
+        
+        option{
+            font-size: 1.1em;
+            color: $third;
+        }
+        
+        .text-form-vender{
+            margin-top: 6%
+        }
+        
+        .cont-notificaciones{
+            @include grid ( 5% 90%, 100%, flex-start, center, none, none);
+            font-size: 1.1em;
+            color: $third;
+        }
     }
     
+//Modal:
     .modal-header, .modal-footer{
         background-color: $primary;
         color: $secondary;
-    }
-    
-    .cont-puestos{
-        @include grid ( 7% 24% 7% 24% 7% 24%, 100%, center, center, none, none);
-        color: $third;
-        font-weight: bold;
-    }
-    
-    .label-turnos{
-        margin-bottom: 3%
-    }
-    
-    option{
-        font-size: 1.1em;
-        color: $third;
-    }
-    
-    .text-form-vender{
-        margin-top: 6%
-    }
-    
-    .cont-notificaciones{
-        @include grid ( 5% 90%, 100%, flex-start, center, none, none);
-        font-size: 1.1em;
-        color: $third;
-    
-    }
+}

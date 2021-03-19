@@ -1,8 +1,8 @@
-    /*Productos*/
+/*Productos*/
+
+//General y texto:    
     .contenedor-productos{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
+        @include flexbox (center, center, flex-wrap);
         width: 100%;
 
         h3{
@@ -12,53 +12,45 @@
         }
 
         h4{
+            @include input-style (none, none, none, none, $font-color, $third, 0.6);
             margin: 0% 0% 0% 0%;
-            color: $third;
-            background-color: $font-color;
             border-radius: 20px;
-            opacity: 0.6;
             font-size: 20em;
         }
     }
 
+// Carrousel de productos:
     .carrousel-productos{
-        margin: 3% 0% 0% 10%;
-        width: 80%;
+        @include box-model (0%, 3% 0% 0% 10%, 80%, normal);
     }
 
     .cont-carrousel-y-h3{
+        @include sombras;
+        @include background (normal, 79vh, 80%, none);
         margin: 3% 0%;
         background-color: $bg-color-two;
-        width: 80%;
-        height: 79vh;  
-        -webkit-box-shadow: 11px 15px 10px -3px rgba(51,51,51,1);
-        -moz-box-shadow: 11px 15px 10px -3px rgba(51,51,51,1);
-        box-shadow: 11px 15px 10px -3px rgba(51,51,51,1);
     }
 
     .fotos-productos{
-        width: 100%;
-        height: 47vh;
+        @include box-model (0%, 3% 0% 0% 10%, 100%, 47vh);
 
     }
 
+//Botones:
     .boton-prev-sig{
         background-color: transparent;
         border: transparent;
     }
 
     .boton-encargar{
-        width: 100%;
-        height: 13vh;
+        @include input-style (none, none, none, none, $buttons, $font-color, 1);
+        @include box-model (0%, 0%, 100%, 13vh);
         font-size: 1.3em;
-        background-color:firebrick;
-        color: $font-color;
         border: none;
 
             &:hover{
-                background-color: $font-color;
-                color: firebrick;
+                @include input-style (3px solid $buttons, 3px solid $buttons, 3px solid $buttons, 
+                3px solid $buttons, $font-color, $buttons, 1);
                 font-weight: bold;
-                border: 3px solid firebrick;
             }
     }

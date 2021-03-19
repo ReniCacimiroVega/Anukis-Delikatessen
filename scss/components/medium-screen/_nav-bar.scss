@@ -1,4 +1,41 @@
 /*Menú*/
+//Logos:
+    .checkboton{
+        font-size: 2em;
+        color: $secondary;
+        cursor: pointer;
+    }
+
+    .cont-fa-search{
+        margin-left: -30%;
+    }
+
+    .fa-search{
+        font-size: 2em;
+        color: $secondary;
+        cursor: pointer;
+    }
+
+    #check{
+        display: none;
+    }
+
+    .foto-nav-pant-peque{
+        min-width: 3.5em;
+        height:3.5em;
+    }
+
+    .foto-nav-pant-peque:hover{
+        animation: flip;
+        animation-duration: 1.2s;
+    }
+
+    .foto-nav-pant-grande{
+        display: none;
+    }
+
+
+// Nav:
     .caja-de-items{
         display: none;
     }
@@ -41,15 +78,15 @@
     
     li{
         @include box-model(1% 2%, 0% 0% 0% -1.9%, 100%, none);
-    }
-    
-    li:hover{
+
+        &:hover{
         background: $bg-color-two;
         transition: 0.7s;
-    }
-    
-    li:hover a{
+        }
+
+        &:hover a{
         color: $third;
+        }
     }
     
     .items{
@@ -64,44 +101,5 @@
     
     #check:checked ~ ul {
         left: 0%;
-
-            .fa-arrow-right{
-                font-size: 2em;
-
-            }
-    }
-
-    .checkboton{
-        font-size: 2em;
-        color: $secondary;
-        cursor: pointer;
-    }
-    
-    .cont-fa-search{
-        margin-left: -30%;
-    }
-    
-    .fa-search{
-        font-size: 2em;
-        color: $secondary;
-        cursor: pointer;
-    }
-    
-    #check{
-        display: none;
-    }
-    
-    .foto-nav-pant-peque{
-        min-width: 3.5em;
-        height:3.5em;
-    }
-    
-    .foto-nav-pant-peque:hover{
-        animation: flip;
-        animation-duration: 1.2s;
-    }
-    
-    .foto-nav-pant-grande{
-        display: none;
     }
     

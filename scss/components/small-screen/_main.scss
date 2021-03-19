@@ -1,4 +1,6 @@
-/*Header*/
+/* Header*/
+
+    // Carrousel del inicio:
     .carrousel-grande{
         z-index: 5;
     }
@@ -23,7 +25,8 @@
         margin-left: -65%;
     }
     
-    /*Botones*/
+
+// Boton ir arriba:
     .arriba-boton{
         @include position (fixed, none, 1%, 5%, none, 4);
         @include texto (2em, $secondary, center, normal, normal, none);
@@ -37,7 +40,8 @@
                 background-color: $primary;
             }
     }
-    
+  
+// Eslogan:  
     .eslogan{
         @include texto (2.6em, $font-color, center, normal, normal, $courgette);
         @include box-model (0% 0%, 0%, 80%, 20vh);
@@ -48,21 +52,18 @@
         opacity: 0.65;
     }
     
+// Quienes somos
     .nosotros{
         @include flexbox (center, center, normal);
     }
     
     .contenedor-motivos{
         @include grid (90%, 20% 80%, center, center, none, none);
-        background-color: $font-color;
+        @include input-style (none, none, 3px solid $third, 3px solid $third, $font-color, none, 1);
         @include box-model(3% 0% 8% 0%, 10% 7% -3% 7%, 100%, 70%);
+        @include sombras;
         grid-gap: 1%;
         text-align: center;
-        -webkit-box-shadow: 11px 15px 10px -3px rgba(51,51,51,1);
-        -moz-box-shadow: 11px 15px 10px -3px rgba(51,51,51,1);
-        box-shadow: 11px 15px 10px -3px rgba(51,51,51,1);
-        border-left: 3px solid black;
-        border-right: 3px solid black;
     }
     
     .debajo-del-eslogan{

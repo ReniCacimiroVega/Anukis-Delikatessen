@@ -1,10 +1,11 @@
 /*Vender Anukis*/
+//General y texto:
     .vender{
         @include background (100% 100%, none, 100%, url("../imagenes/fondos/fondo-vender3.jpg"));
         margin-top: 7%;
     }
     
-    .section-vender{
+    .article-vender{
         @include grid ( 100%, 100%, center, center, none, none);
         height: 110vh;
     }
@@ -17,13 +18,13 @@
     .h4uno{
         @include box-model( 3% 3% 0% 3%, 20% 1% 10% 0%, 60%, 30vh);
         @include texto (1.5em, $bg-color, center, normal, bold, $montserrat);
-    
         text-transform: uppercase;
         background-color: $third;
         opacity: 0.6;
         position: relative;
     }
     
+//Boton del formulario:
     .boton-formulario{
         @include box-model(0%, 0% 0% 0% 0%, 80%, 2.8em);
         @include texto (2em, $third, center, normal, normal, $lato);
@@ -31,9 +32,8 @@
         border-radius: 10px;
         border: none;
     }
-    
-    /* MODAL DEL FORMULARIO */
-    
+
+//Formulario:    
     .form-vender{
         input[type=text], input[type=email], textarea{
             font-size: 1em;
@@ -55,12 +55,7 @@
         color: $third;
         font-weight: bold;
     }
-    
-    .modal-header, .modal-footer{
-        background-color: $primary;
-        color: $secondary;
-    }
-    
+
     .cont-puestos{
         @include grid ( 5% 20% 5% 20% 5% 20%, 100%, center, center, none, none);
         color: $third;
@@ -84,5 +79,10 @@
         @include grid ( 5% 90%, 100%, flex-start, center, none, none);
         font-size: 1.1em;
         color: $third;
-    
     }
+
+//Modal:
+.modal-header, .modal-footer{
+    background-color: $primary;
+    color: $secondary;
+}

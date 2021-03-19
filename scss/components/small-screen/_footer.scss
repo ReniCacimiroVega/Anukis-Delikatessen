@@ -1,4 +1,4 @@
- /*Pie de pagina*/
+/*Pie de pagina*/
     footer{
         @include box-model(3% 3% 5% 3%, 0%, 100%, 100%);
         @include texto (1.4em, $secondary, center, normal, bold, $lato);

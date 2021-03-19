@@ -3,32 +3,33 @@
         margin-bottom: 0%;
     }
     
-    .article-socios h3, p{
-        @include grid (100%, 100%, center, center, none, none);
-        text-align: center;
-    }
+//Texto:    
+    .article-socios{
+        h3, p{
+            @include grid (100%, 100%, center, center, none, none);
+            text-align: center;
+        }
+        
+        h3{
+            font-size: 1.9em;
+            margin: 9% 0%;
+        }
+        
+        p{
+            font-size: 1.2em;
+            line-height: 30px;
+            margin: 30% 10% 5% 10%
+        }
+}
     
-    .article-socios h3{
-        font-size: 1.9em;
-        margin: 9% 0%;
-    }
-    
-    .article-socios p{
-        font-size: 1.2em;
-        line-height: 30px;
-        margin: 30% 10% 5% 10%
-    }
-    
+//Fotos:
     .cont-fotos-socios{
         @include grid (100%, 33.3% 33.3% 33.3%, center, center, none, none);
         row-gap: 3%;
     }
 
     .foto-socios{
-        height: 22em;
-        background-size: 100% 100%;
-        background-position: center;
-        background-repeat: no-repeat;
+        @include background (100% 100%, 22em, normal, none);
         transition: 1.1s;
 
             &:hover{
@@ -43,9 +44,7 @@
     }
 
     .foto-socios2, .foto-socios5{
-        height: 17.5em;
-        width: 75%;
-        margin: 0% 0% 0% 12%;
+        @include box-model (0%, 0% 0% 0% 12%, 75%, 17.5em);
     }
 
     .foto-socios2{

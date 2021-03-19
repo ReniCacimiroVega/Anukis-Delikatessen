@@ -48,7 +48,7 @@
     }
     
 
-    // Botones del formulario: 
+// Botones del formulario: 
     .cont-botones{
         @include grid ( 50% 50%, 100%, center, center, none, none);
         margin-top: 8%;
@@ -69,9 +69,7 @@
         transition: 0.6s;
     }
 
-
-
-    // Iframe de ubicación:
+// Iframe de ubicación:
     .ubicacion{
         @include box-model(0%, 0% 0% 18% 0%, 64vh, 70vh);
         border-radius: 3px;

@@ -1,4 +1,5 @@
 /* Contacto */
+// General:
 .contacto{
     @include background (110% 100%, none, 100%, url("../imagenes/fondos/contact2.jpg"));
     margin-top: 20%;
@@ -16,6 +17,7 @@
     width: 80%;
     height: 50vh;
 
+// Inputs y textarea:
         input[type=text], textarea{
             @include box-model(0%, 15% 0%, 100%, 18%);
             @include texto (1.2em, $font-color, left, normal, bold, $lato);
@@ -34,6 +36,7 @@
             font-size: 1.2em;
         }
         
+// Botones del formulario: 
         .cont-botones{
             @include grid ( 50% 50%, 100%, center, center, none, none);
             margin: 0% -0.1% 45% -0.1%;
@@ -56,6 +59,7 @@
         }
 }
 
+// Iframe de ubicación:
 .cont-ubicacion{
     display: flex;
     justify-content: center;

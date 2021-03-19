@@ -31,10 +31,7 @@
 
 // Fotos:
     .foto-socios{
-        height: 60vh;
-        background-size: 100% 100%;
-        background-position: center;
-        background-repeat: no-repeat;
+        @include background (100% 100%, 60vh, normal, none);
         transition: 1.1s;
 
             &:hover{

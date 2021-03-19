@@ -1,5 +1,4 @@
 /* Titulos de secicones */
-    
     .titulo-de-secciones{
         @include texto (6em, $third, center, italic, none, $lato);
         @include box-model(0em, 5% 0% 0% 0%, 100%, 1em);
