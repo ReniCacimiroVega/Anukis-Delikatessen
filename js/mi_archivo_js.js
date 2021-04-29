@@ -78,37 +78,39 @@ class Comentarios{
 let formularioComentarios = document.getElementById("form-contacto-js");
     formularioComentarios.addEventListener("submit", guardarDatos);
 
-function guardarDatos(){ /**Guarda los datos del formulario */
-        
-    let nombre2 = document.getElementById("name");
-        nombre2 = sessionStorage.setItem(nombre2, "nombre");
+function guardar_comentario() { // Guarda los datos de el formulario
+	var nombre = document.getElementById('nombreF2').value;	
+	var mail = document.getElementById('mailF2').value;	
+	var texto = document.getElementById('textoF2').value;	
 
-    let email2 = document.getElementById("email");
-        email2 = sessionStorage.setItem(email2, "email")
+	sessionStorage.setItem('nombre', nombre);
+	sessionStorage.setItem('mail', mail);
+	sessionStorage.setItem('texto', texto);
 
-    let textoPersonal = document.getElementById("textoPersonal");
-        textoPersonal = sessionStorage.setItem(textoPersonal, "texto");
+	// TODO: Atencion
+}
+
+/*
+function guardarDatos(comentario){ /**Guarda los datos del formulario 
 
     let atencion = document.createElement("p");
 
-        if((nombre2 == "") || (email2 == "") || (textoPersonal == "")){
+        if((nombre == "") || (email == "") || (textoPersonal == "")){
             atencion.innerHTML = "";
         }
-
-        else{
-            var comentario = new Comentarios(nombre2, email2, textoPersonal);
-            function json_transform (){
-                JSONcomentario = JSON.stringify(comentario); }
-                json_transform;
-                atencion.innerHTML = "¡Comentario enviado! Muchas gracias."
-                formularioComentarios.appendChild(atencion);
+        else {
+          var comentario = new Comentarios(nombre, email, textoPersonal);
+          function json_transform() { JSONcomentario = JSON.stringify(comentario); }
+          json_transform;
+          atencion.innerHTML = "¡Comentario enviado! Muchas gracias."
+          formularioComentarios.appendChild(atencion);
+				}
     }
-    }
+		*/
 
 
 
 /**PROGRAMA ***********************/
-guardarDatos(Comentarios);
 guardarDatosDeAplicacion(DatosDeAplicacion);
 
 
