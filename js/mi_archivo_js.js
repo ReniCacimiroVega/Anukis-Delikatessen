@@ -1,114 +1,59 @@
 /** LIBRERIA ***********************/
 
-/**formulario de venta */
-class DatosDeAplicacion{
-    constructor (nombre1, puesto, email1, horario, descripcion) {
-        this.nombre1 = nombre1;
-        this.puesto = puesto;
-        this.email1 = email1;
-        this.horario = horario;
-        this.descripcion = descripcion;
-    }
+function guardar_aplicacion() { //U: Guarda una aplicacion
+	var aplicaciones = JSON.parse(sessionStorage.getItem('aplicaciones'));
+	if (!aplicaciones) { aplicaciones = []; }
+
+	var aplicacion = {};
+	aplicacion.nombre = document.getElementById('nombreF1').value;	
+	aplicacion.mail = document.getElementById('mailF1').value;	
+	aplicacion.puesto = document.getElementById('puestoF1').value;	
+	aplicacion.horario = document.getElementById('horarioF1').value;	
+	aplicacion.anuncios = document.getElementById('anunciosF1').value;	
+
+	aplicaciones.push(aplicacion);
+	sessionStorage.setItem('aplicaciones', JSON.stringify(aplicaciones));
+
+	//TODO: Alert
 }
 
-let formularioVender = document.getElementById("form-vender-js");
-    formularioVender.addEventListener("botonF1", guardarDatosDeAplicacion);
+function guardar_comentario() { // Guarda un comentario 
+	var comentarios = JSON.parse(sessionStorage.getItem('comentarios'));
+	if (!comentarios) { comentarios = []; } //A: La primera vez carga nulo, lo seteo
 
-function guardarDatosDeAplicacion(){
+	var comentario = {};
+	comentario.nombre = document.getElementById('nombreF2').value;	
+	comentario.mail = document.getElementById('mailF2').value;	
+	comentario.texto = document.getElementById('textoF2').value;	
 
-    let nombre1 = document.getElementById("nombreF1");
-        nombre1 = sessionStorage.setItem(nombre1, "nombre completo");
+	comentarios.push(comentario);
+	sessionStorage.setItem('comentarios', JSON.stringify(comentarios));
 
-    let puesto = document.getElementById("puesto");
-        puesto.onclick = function (){
-            let input_radio = document.formularioVender.input_radio;
-                for (i = 0; i < input_radio.length; i++){
-                    if(input_radio[i].checked){
-                    puesto = input_radio[i].value;
-                }
-                }
-    }
-
-    let email1 = document.getElementById("emailF1");
-        email1 = sessionStorage.setItem(email1, "email");
-
-    let horario = document.getElementById("horariosF1");
-        horario.onclick = function (){
-            let select = document.formularioVender.select;
-                for (i = 0; i < select.length; i++){
-                    if(input_radio[i].checked){
-                        horario = select[i].value;
-                    }
-                }
-
-    let notificaciones = document.getElementById("anunciosF1");
-        notificaciones.onclick = function (){
-            if (notificaciones.checked){
-                notificaciones = sessionStorage.setItem(Anuncios, "Acepto")
-            }
-    }
-
-    if((nombre1 == "") || (puesto == "") || (email1 == "") || (horario == "") || (notificaciones == "")){
-        alert("Debe completar todos los espacios.")
-    }
-
-    else{
-        var aplicacionDeTrabajo = new DatosDeAplicacion(nombre1, puesto, email1, horario, notificaciones);
-        function json_transform (){
-            JSONaplicacion = JSON.stringify(aplicacionDeTrabajo); }
-            json_transform;
-            alert("¡Datos enviados! Revisaremos tu solicitud cuanto antes.");
-    }
-
-
-}
+	// TODO: Alert
 }
 
-
-
-/**formulario de  comentarios*/
-class Comentarios{ 
-    constructor(nombre2, email2, texto){
-        this.nombre2 = nombre2;
-        this.email2 = email2;
-        this.texto = texto;
-    }
-}
-
-let formularioComentarios = document.getElementById("form-contacto-js");
-    formularioComentarios.addEventListener("submit", guardarDatos);
-
-function guardarDatos(){ /**Guarda los datos del formulario */
-        
-    let nombre2 = document.getElementById("name");
-        nombre2 = sessionStorage.setItem(nombre2, "nombre");
-
-    let email2 = document.getElementById("email");
-        email2 = sessionStorage.setItem(email2, "email")
-
-    let textoPersonal = document.getElementById("textoPersonal");
-        textoPersonal = sessionStorage.setItem(textoPersonal, "texto");
+/*
+function guardarDatos(comentario){ /**Guarda los datos del formulario 
 
     let atencion = document.createElement("p");
 
-        if((nombre2 == "") || (email2 == "") || (textoPersonal == "")){
+        if((nombre == "") || (email == "") || (textoPersonal == "")){
             atencion.innerHTML = "";
         }
-
-        else{
-            var comentario = new Comentarios(nombre2, email2, textoPersonal);
-            function json_transform (){
-                JSONcomentario = JSON.stringify(comentario); }
-                json_transform;
-                atencion.innerHTML = "¡Comentario enviado! Muchas gracias."
-                formularioComentarios.appendChild(atencion);
+        else {
+          var comentario = new Comentarios(nombre, email, textoPersonal);
+          function json_transform() { JSONcomentario = JSON.stringify(comentario); }
+          json_transform;
+          atencion.innerHTML = "¡Comentario enviado! Muchas gracias."
+          formularioComentarios.appendChild(atencion);
+				}
     }
-    }
+		*/
 
+/* Programa */
 
+botonF1 = document.getElementById('botonF1');
+botonF1.addEventListener('click', guardar_aplicacion);
 
-/**PROGRAMA ***********************/
-guardarDatos(Comentarios);
-guardarDatosDeAplicacion(DatosDeAplicacion);
-
-
+botonF2 = document.getElementById('botonF2');
+botonF2.addEventListener('click', guardar_comentario);
