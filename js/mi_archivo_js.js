@@ -1,20 +1,9 @@
 /** LIBRERIA ***********************/
 
-/**formulario de venta */
-class DatosDeAplicacion{
-    constructor (nombre1, puesto, email1, horario, descripcion) {
-        this.nombre1 = nombre1;
-        this.puesto = puesto;
-        this.email1 = email1;
-        this.horario = horario;
-        this.descripcion = descripcion;
-    }
-}
+function guardar_aplicacion() { //U: Guarda una aplicacion
+	var aplicaciones = JSON.parse(sessionStorage.getItem('aplicaciones'));
+	if (!aplicaciones) { aplicaciones = []; }
 
-let formularioVender = document.getElementById("form-vender-js");
-    formularioVender.addEventListener("botonF1", guardarDatosDeAplicacion);
-
-function guardar_aplicacion() {
 	var aplicacion = {};
 	aplicacion.nombre = document.getElementById('nombreF1').value;	
 	aplicacion.mail = document.getElementById('mailF1').value;	
@@ -22,23 +11,13 @@ function guardar_aplicacion() {
 	aplicacion.horario = document.getElementById('horarioF1').value;	
 	aplicacion.anuncios = document.getElementById('anunciosF1').value;	
 
-	sessionStorage.setItem('aplicacion', JSON.stringify(aplicacion));
+	aplicaciones.push(aplicacion);
+	sessionStorage.setItem('aplicaciones', JSON.stringify(aplicaciones));
+
 	//TODO: Alert
 }
 
-/**formulario de  comentarios*/
-class Comentarios{ 
-    constructor(nombre2, email2, texto){
-        this.nombre2 = nombre2;
-        this.email2 = email2;
-        this.texto = texto;
-    }
-}
-
-let formularioComentarios = document.getElementById("form-contacto-js");
-    formularioComentarios.addEventListener("submit", guardarDatos);
-
-function guardar_comentario() { // Guarda los datos de el formulario
+function guardar_comentario() { // Guarda un comentario 
 	var comentarios = JSON.parse(sessionStorage.getItem('comentarios'));
 	if (!comentarios) { comentarios = []; } //A: La primera vez carga nulo, lo seteo
 
