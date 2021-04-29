@@ -496,22 +496,19 @@
 
                                 <br>
                                 <label for="puesto" class="label-form-vender">Puesto que te interesa:</label>
-                                <div class="cont-puestos" aria-required="true" id="puestosF1">
-                                    <input type="radio" name="puesto" value="Delivery">
-                                    <div>Delivery</div>
-                                    <input type="radio" name="puesto" value="Cocinero">
-                                    <div>Cocinero</div>
-                                    <input type="radio" name="puesto" value="soporte">
-                                    <div>Soporte web</div>
-                                </div>
+																<select name="horarios" id="puestoF1" required>
+                                    <option value="del">Delivery</option>
+                                    <option value="coc">Cocinero</option>
+                                    <option value="web">Soporte Web</option>
+                                </select>
 
-                                <input type="email" name="Email" id="EmailF1" placeholder="Email..." required>
+                                <input type="email" name="Email" id="mailF1" placeholder="Email..." required>
 
                                 <br>
                                 <label for="horarios" class="label-form-vender label-turnos">Turno disponible</label>
 
                                 <br>
-                                <select name="horarios" id="horariosF1" requi
+                                <select name="horarios" id="horarioF1" requi
                                 red>
                                     <option value="AM">A la mañana</option>
                                     <option value="PM">A la tarde</option>
@@ -533,7 +530,7 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                            <button type="submit" class="btn btn-warning" id="botonF1">Enviar datos</button>
+                            <button type="submit" class="btn btn-warning" id="botonF1" onclick="guardar_aplicacion()">Enviar datos</button>
                         </div>
                     </div>
                 </div>

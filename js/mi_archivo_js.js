@@ -14,57 +14,17 @@ class DatosDeAplicacion{
 let formularioVender = document.getElementById("form-vender-js");
     formularioVender.addEventListener("botonF1", guardarDatosDeAplicacion);
 
-function guardarDatosDeAplicacion(){
+function guardar_aplicacion() {
+	var aplicacion = {};
+	aplicacion.nombre = document.getElementById('nombreF1').value;	
+	aplicacion.mail = document.getElementById('mailF1').value;	
+	aplicacion.puesto = document.getElementById('puestoF1').value;	
+	aplicacion.horario = document.getElementById('horarioF1').value;	
+	aplicacion.anuncios = document.getElementById('anunciosF1').value;	
 
-    let nombre1 = document.getElementById("nombreF1");
-        nombre1 = sessionStorage.setItem(nombre1, "nombre completo");
-
-    let puesto = document.getElementById("puesto");
-        puesto.onclick = function (){
-            let input_radio = document.formularioVender.input_radio;
-                for (i = 0; i < input_radio.length; i++){
-                    if(input_radio[i].checked){
-                    puesto = input_radio[i].value;
-                }
-                }
-    }
-
-    let email1 = document.getElementById("emailF1");
-        email1 = sessionStorage.setItem(email1, "email");
-
-    let horario = document.getElementById("horariosF1");
-        horario.onclick = function (){
-            let select = document.formularioVender.select;
-                for (i = 0; i < select.length; i++){
-                    if(input_radio[i].checked){
-                        horario = select[i].value;
-                    }
-                }
-
-    let notificaciones = document.getElementById("anunciosF1");
-        notificaciones.onclick = function (){
-            if (notificaciones.checked){
-                notificaciones = sessionStorage.setItem(Anuncios, "Acepto")
-            }
-    }
-
-    if((nombre1 == "") || (puesto == "") || (email1 == "") || (horario == "") || (notificaciones == "")){
-        alert("Debe completar todos los espacios.")
-    }
-
-    else{
-        var aplicacionDeTrabajo = new DatosDeAplicacion(nombre1, puesto, email1, horario, notificaciones);
-        function json_transform (){
-            JSONaplicacion = JSON.stringify(aplicacionDeTrabajo); }
-            json_transform;
-            alert("¡Datos enviados! Revisaremos tu solicitud cuanto antes.");
-    }
-
-
+	sessionStorage.setItem('aplicacion', JSON.stringify(aplicacion));
+	//TODO: Alert
 }
-}
-
-
 
 /**formulario de  comentarios*/
 class Comentarios{ 
@@ -87,7 +47,7 @@ function guardar_comentario() { // Guarda los datos de el formulario
 	sessionStorage.setItem('mail', mail);
 	sessionStorage.setItem('texto', texto);
 
-	// TODO: Atencion
+	// TODO: Alert
 }
 
 /*
@@ -107,10 +67,3 @@ function guardarDatos(comentario){ /**Guarda los datos del formulario
 				}
     }
 		*/
-
-
-
-/**PROGRAMA ***********************/
-guardarDatosDeAplicacion(DatosDeAplicacion);
-
-
