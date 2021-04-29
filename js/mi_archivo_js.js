@@ -39,12 +39,16 @@ let formularioComentarios = document.getElementById("form-contacto-js");
     formularioComentarios.addEventListener("submit", guardarDatos);
 
 function guardar_comentario() { // Guarda los datos de el formulario
+	var comentarios = JSON.parse(sessionStorage.getItem('comentarios'));
+	if (!comentarios) { comentarios = []; } //A: La primera vez carga nulo, lo seteo
+
 	var comentario = {};
 	comentario.nombre = document.getElementById('nombreF2').value;	
 	comentario.mail = document.getElementById('mailF2').value;	
 	comentario.texto = document.getElementById('textoF2').value;	
 
-	sessionStorage.setItem('comentario', JSON.stringify(comentario));
+	comentarios.push(comentario);
+	sessionStorage.setItem('comentarios', JSON.stringify(comentarios));
 
 	// TODO: Alert
 }
