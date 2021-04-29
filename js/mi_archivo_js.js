@@ -49,3 +49,11 @@ function guardarDatos(comentario){ /**Guarda los datos del formulario
 				}
     }
 		*/
+
+/* Programa */
+
+botonF1 = document.getElementById('botonF1');
+botonF1.addEventListener('click', guardar_aplicacion);
+
+botonF2 = document.getElementById('botonF2');
+botonF2.addEventListener('click', guardar_comentario);
