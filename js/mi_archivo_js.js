@@ -11,44 +11,45 @@ function guardar_aplicacion() { //U: Guarda una aplicacion
 	aplicacion.horario = document.getElementById('horarioF1').value;	
 	aplicacion.anuncios = document.getElementById('anunciosF1').value;	
 
-	aplicaciones.push(aplicacion);
-	sessionStorage.setItem('aplicaciones', JSON.stringify(aplicaciones));
+	if ((aplicacion.nombre == "") || (aplicacion.mail == "") || (aplicacion.puesto == "") ||
+	(aplicacion.horario == "") || (aplicacion.anuncios == "")){
+		alert("Debe completar todos los campos.")
+	}
+	else{
+		aplicaciones.push(aplicacion);
+		sessionStorage.setItem('aplicaciones', JSON.stringify(aplicaciones));
+		alert("¡Su aplicación fue enviada!")
+	}
 
-	//TODO: Alert
 }
 
-function guardar_comentario() { // Guarda un comentario 
+function guardar_comentario() { //U: Guarda un comentario 
 	var comentarios = JSON.parse(sessionStorage.getItem('comentarios'));
 	if (!comentarios) { comentarios = []; } //A: La primera vez carga nulo, lo seteo
 
 	var comentario = {};
 	comentario.nombre = document.getElementById('nombreF2').value;	
 	comentario.mail = document.getElementById('mailF2').value;	
-	comentario.texto = document.getElementById('textoF2').value;	
+	comentario.texto = document.getElementById('textoF2').value;
+	
+	let respuesta = document.createElement("p");
+	respuesta.style.fontSize="40px";
+	respuesta.style.textAlign="center";
+	respuesta.classList.add="respuesta-de-form2";
 
-	comentarios.push(comentario);
-	sessionStorage.setItem('comentarios', JSON.stringify(comentarios));
+	if ((comentario.nombre == "") || (comentario.mail == "") || (comentario.texto == "")){
+		respuesta.innerHTML = "Debe completar todos los campos";
+		document.body.appendChild(respuesta);
+	}
+	else{
+		comentarios.push(comentario);
+		sessionStorage.setItem('comentarios', JSON.stringify(comentarios));
+		respuesta.innerHTML = "¡Muchas gracias! Leeremos tu comentario más tarde";
+		document.body.appendChild(respuesta);
+	}
 
-	// TODO: Alert
 }
 
-/*
-function guardarDatos(comentario){ /**Guarda los datos del formulario 
-
-    let atencion = document.createElement("p");
-
-        if((nombre == "") || (email == "") || (textoPersonal == "")){
-            atencion.innerHTML = "";
-        }
-        else {
-          var comentario = new Comentarios(nombre, email, textoPersonal);
-          function json_transform() { JSONcomentario = JSON.stringify(comentario); }
-          json_transform;
-          atencion.innerHTML = "¡Comentario enviado! Muchas gracias."
-          formularioComentarios.appendChild(atencion);
-				}
-    }
-		*/
 
 /* Programa */
 
