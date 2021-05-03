@@ -1,4 +1,21 @@
 /** LIBRERIA ***********************/
+class Invitado{
+	constructor (nombre, perro, gato){
+		nombre = prompt("Dinos tu nombre");
+		perro = prompt("¿Tenés perro?");
+		gato = prompt("¿Tenés perro?");
+	}
+
+	saludar() {
+		if((this.perro !== "") && (this.gato !== "")){
+			alert("¡Bienvenide a Anukis Delikatessen!¡Cuantas mascotas! ¡Tienes 2x1 en todas tus compras!")
+		} else{
+			alert("¡Bienvenide a Anukis Delikatessen! Esperamos que tengas una buena experiencia.");
+
+		}
+	}
+
+}
 
 function guardar_aplicacion() { //U: Guarda una aplicacion
 	var aplicaciones = JSON.parse(sessionStorage.getItem('aplicaciones'));
@@ -52,6 +69,9 @@ function guardar_comentario() { //U: Guarda un comentario
 
 
 /* Programa */
+
+var invitado = new Invitado();
+invitado.saludar();
 
 botonF1 = document.getElementById('botonF1');
 botonF1.addEventListener('click', guardar_aplicacion);
