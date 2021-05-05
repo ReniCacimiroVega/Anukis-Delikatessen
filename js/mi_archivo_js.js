@@ -8,7 +8,8 @@ class Invitado{
 
 	saludar() {
 		if((this.perro !== "") && (this.gato !== "")){
-			alert("¡Bienvenide a Anukis Delikatessen!¡Cuantas mascotas! ¡Tienes 2x1 en todas tus compras!")
+			alert("¡Bienvenide a Anukis Delikatessen!¡Cuantas mascotas! ¡Tienes 2x1 en todas tus compras!");
+
 		} else{
 			alert("¡Bienvenide a Anukis Delikatessen! Esperamos que tengas una buena experiencia.");
 
@@ -16,6 +17,27 @@ class Invitado{
 	}
 
 }
+
+class Sabor{
+	constructor (producto, precio, tamaño, sabor){
+		this.producto = producto;
+		this.precio = precio;
+		this.sabor = sabor;
+	}
+}
+
+
+function anunciar_sabores(sabores) { //U: Avisa con que sabores contamos
+	if (Sabores.length > 0) { //A: Si tengo al menos un sabor para mostrar
+		var s = 'Los sabores de galletas con los que contamos son: '
+		for (const sabores of Sabores) {
+			s += sabores.sabor + ', ';
+		}
+		alert(s);
+	}
+}
+
+
 
 function guardar_aplicacion() { //U: Guarda una aplicacion
 	var aplicaciones = JSON.parse(sessionStorage.getItem('aplicaciones'));
@@ -69,6 +91,12 @@ function guardar_comentario() { //U: Guarda un comentario
 
 
 /* Programa */
+
+const Pollo_Oregano = new Sabor("galletas", 200, "Pollo y orégano");
+const Higado = new Sabor("galletas", 225, "hígado de pollo");
+const Carne_Remolacha = new Sabor("galletas", 255, "carne y remolacha.");
+
+const Sabores = [Pollo_Oregano, Higado, Carne_Remolacha];
 
 var invitado = new Invitado();
 invitado.saludar();
