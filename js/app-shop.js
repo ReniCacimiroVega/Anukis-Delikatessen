@@ -17,7 +17,7 @@ window.addEventListener('scroll', ScrollFade)
 /** S: Carrito **********************************************/
 
 function leer_carrito() {
-  var carrito = JSON.parse(sessionStorage.getItem('carrito')); //U: con parse se vuelve un elemento legible
+  var carrito = JSON.parse(localStorage.getItem('carrito')); //U: con parse se vuelve un elemento legible
   if (!carrito) { //U: La primera vez carga nulo, lo seteo
 		carrito = [
 			[0, 0, 0, 0], //A: Carne y remolacha
@@ -39,7 +39,7 @@ function modificar_carrito(tipo, tamanio, cant) {
 		carrito[tipo][tamanio] = 0; //A: 0 de piso
 	}
 
-  sessionStorage.setItem('carrito', JSON.stringify(carrito));
+  localStorage.setItem('carrito', JSON.stringify(carrito));
 
 	actualizar_texto_carrito(tipo, tamanio, carrito[tipo][tamanio]);
 }

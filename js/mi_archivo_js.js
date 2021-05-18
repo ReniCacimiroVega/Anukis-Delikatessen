@@ -2,7 +2,7 @@
 
 
 function guardar_aplicacion() { //U: Guarda una aplicacion
-	var aplicaciones = JSON.parse(sessionStorage.getItem('aplicaciones'))
+	var aplicaciones = JSON.parse(localStorage.getItem('aplicaciones'))
 	
 	if (!aplicaciones) { aplicaciones = []; } 
 	//E: si la variable esta vacia, se inicializa volviendole un array y se deja vacia
@@ -23,7 +23,7 @@ function guardar_aplicacion() { //U: Guarda una aplicacion
 
 	else{
 		aplicaciones.push(aplicacion);
-		sessionStorage.setItem('aplicaciones', JSON.stringify(aplicaciones));
+		localStorage.setItem('aplicaciones', JSON.stringify(aplicaciones));
 		alert("¡Su aplicación fue enviada!")
 	}
 }
@@ -32,7 +32,7 @@ function guardar_aplicacion() { //U: Guarda una aplicacion
 
 
 function guardar_comentario() { //U: Guarda un comentario 
-	var comentarios = JSON.parse(sessionStorage.getItem('comentarios')); //U: con parse se vuelve un elemento legigle
+	var comentarios = JSON.parse(localStorage.getItem('comentarios')); //U: con parse se vuelve un elemento legigle
 	if (!comentarios) { comentarios = []; } //U: La primera vez carga nulo, lo seteo
 
 	var comentario = {};
@@ -45,7 +45,7 @@ function guardar_comentario() { //U: Guarda un comentario
 	}
 	else{
 		comentarios.push(comentario);
-		sessionStorage.setItem('comentarios', JSON.stringify(comentarios));
+		localStorage.setItem('comentarios', JSON.stringify(comentarios));
 		$(".form-contacto").append("<p style='font-size: 40px; text-align: center; background: white; margin: 5%';>¡Muchas gracias! Leeremos tu comentario más tarde</p>");
 	}
 
