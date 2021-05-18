@@ -1,0 +1,24 @@
+.cont-sabores{
+	width: 100%
+}
+
+.Sabores{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.tamaño{
+	margin: 10% 3%;
+}
+
+img{
+	width: 200px;
+	height: 300px;
+}
+
+.ScrollFade{
+	opacity: 0;
+	transition: all 0.5s;
+}
