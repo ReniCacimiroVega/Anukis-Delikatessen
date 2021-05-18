@@ -40,6 +40,12 @@ function modificar_carrito(tipo, tamanio, cant) {
 	}
 
   sessionStorage.setItem('carrito', JSON.stringify(carrito));
+
+	actualizar_texto_carrito(tipo, tamanio, carrito[tipo][tamanio]);
+}
+
+function actualizar_texto_carrito(tipo, tamanio, cant) {
+	document.getElementById('carrito_' + tipo + '_' + tamanio).innerText = cant;
 }
 
 function calcular_precio_carrito() {
