@@ -16,7 +16,7 @@ window.addEventListener('scroll', ScrollFade)
 
 /** S: Carrito **********************************************/
 
-function modificar_carrito(tipo, tamanio, cant) {
+function leer_carrito() {
   var carrito = JSON.parse(sessionStorage.getItem('carrito')); //U: con parse se vuelve un elemento legible
   if (!carrito) { //U: La primera vez carga nulo, lo seteo
 		carrito = [
@@ -27,6 +27,12 @@ function modificar_carrito(tipo, tamanio, cant) {
 		];
 	} 
 
+	return carrito;
+}
+
+function modificar_carrito(tipo, tamanio, cant) {
+	var carrito = leer_carrito();
+
 	if ((carrito[tipo][tamanio] + cant) >= 0) { //A: Reviso que la cantidad "tenga sentido" (sea un numero positivo o cero)
 		carrito[tipo][tamanio] += cant;
 	} else {
@@ -34,4 +40,25 @@ function modificar_carrito(tipo, tamanio, cant) {
 	}
 
   sessionStorage.setItem('carrito', JSON.stringify(carrito));
+}
+
+function calcular_precio_carrito() {
+	var carrito = leer_carrito();
+	var total = 0;
+
+	var precios = [
+		[250, 250, 220, 210], //A: Carne y remolacha
+		[230, 230, 200, 190], //A: Pollo y oregano
+		[220, 220, 190, 180], //A: Higado de pollo
+		//A: Mini, Chico, Mediano, Grande
+	];
+
+	//A: Itero sobre carrito y precios, multiplicando cada posicion respectivamente
+	for (i in carrito) { //A: Cada fila
+		for (j in carrito[i]) { //A: Cada columna
+			total += (carrito[i][j] * precios[i][j]);
+		}
+	}
+	
+	return total;
 }
