@@ -1,24 +1,36 @@
 
-
-
 .cont-sabores-shop{
 	width: 100%
 }
 
-.Sabores-shop{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
+.h3-shop{
+	text-align: center;
+	margin: 0% 0% 0% 0%;
+
 }
 
+.Sabores-shop{
+	/* display: flex; */
+	justify-content: center;
+	align-items: center;
+	display: grid;
+
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	flex-wrap: wrap;
+}
+
+.primerSabor-shop{
+	background-color: darksalmon;
+}
+
+
 .tamaño-shop{
-	margin: 10% 3%;
+	margin: 6% 3% 13% 3%;
 }
 
 .img-shop{
-	width: 200px;
-	height: 300px;
+	width: 40vh;
+	height: 50vh;
 }
 
 .ScrollFade{
