@@ -1,19 +1,22 @@
-.cont-sabores{
+
+
+
+.cont-sabores-shop{
 	width: 100%
 }
 
-.Sabores{
+.Sabores-shop{
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	width: 100%;
 }
 
-.tamaño{
+.tamaño-shop{
 	margin: 10% 3%;
 }
 
-img{
+.img-shop{
 	width: 200px;
 	height: 300px;
 }
