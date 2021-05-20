@@ -42,13 +42,19 @@ function modificar_carrito(tipo, tamanio, cant) {
   localStorage.setItem('carrito', JSON.stringify(carrito));
 
 	actualizar_texto_carrito(tipo, tamanio, carrito[tipo][tamanio]);
+	calcular_precio_carrito();
 }
+
+
 
 function actualizar_texto_carrito(tipo, tamanio, cant) {
 	document.getElementById('carrito_' + tipo + '_' + tamanio).innerText = "Cantidad: " + cant;
 }
 
+
+
 function calcular_precio_carrito() {
+
 	var carrito = leer_carrito();
 	var total = 0;
 
@@ -65,6 +71,25 @@ function calcular_precio_carrito() {
 			total += (carrito[i][j] * precios[i][j]);
 		}
 	}
+
+	$("#recibo").html( "<p style='font-size: 20px;' >El total a pagar de su orden es: </p>" + total);
+	// $(".btn-modal-compra").show();
+	return total;
+}
+
+
+
+
+function iniciar_precio() { //U: Cuando cargas la pagina, carga las cantidades que teniamos guardadas
+	var carrito = leer_carrito();
+
+	for (i in carrito) {
+		for (j in carrito[i]) {
+			modificar_carrito(i, j, 0); //A: Suma 0, por lo qe no los modifica
+		}
+	}
+}
+
+iniciar_precio();
+
 	
-	$("#recibo").append( "<p style='font-size: 20px; color: white; background-color: black;' >El total a pagar de su orden es: </p>" + total);
-} 
