@@ -42,17 +42,16 @@ function modificar_carrito(tipo, tamanio, cant) {
   localStorage.setItem('carrito', JSON.stringify(carrito));
 
 	actualizar_texto_carrito(tipo, tamanio, carrito[tipo][tamanio]);
+	calcular_precio_carrito();
 }
 
 function actualizar_texto_carrito(tipo, tamanio, cant) {
 	document.getElementById('carrito_' + tipo + '_' + tamanio).innerText = "Cantidad: " + cant;
 }
 
-
-
-	var total = 0;
 function calcular_precio_carrito() {
 	var carrito = leer_carrito();
+	var total = 0;
 
 	var precios = [
 		[250, 250, 220, 210], //A: Carne y remolacha
@@ -68,9 +67,18 @@ function calcular_precio_carrito() {
 		}
 	}
 	
+	$("#recibo").html( "<p style='font-size: 20px; color: white; background-color: black;' >El total a pagar de su orden es: </p>" + total);
 	return total;
 }
-	
 
- 		
-$("#recibo").html( "<p style='font-size: 20px; color: white; background-color: black;' >El total a pagar de su orden es: </p>" + total);
+function iniciar_precio() { //U: Cuando cargas la pagina, carga las cantidades que teniamos guardadas
+	var carrito = leer_carrito();
+
+	for (i in carrito) {
+		for (j in carrito) {
+			modificar_carrito(i, j, 0); //A: Suma 0, por lo qe no los modifica
+		}
+	}
+}
+
+iniciar_precio();
