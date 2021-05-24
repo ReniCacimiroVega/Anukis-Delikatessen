@@ -351,24 +351,24 @@
                     </div>
                     <div class="modal-body">
                         
-                        <form action="">
-                            <input type="text" name="nombre" placeholder="Titular de la tarjeta" required>
-                            <input type="text" name="numero-tarjeta" placeholder="N° de tarjeta" required>
-                            <input type="date" name="vencimiento" id="" placeholder="Fecha de caducidad" required>
-                            <input type="tel" name="codigo-seg" id="" placeholder="Codigo de seguridad" required>
-                            <input type="tel" name="telefono" id="" placeholder="Número de teléfono">
-                            <input type="text" name="localidad" id="" placeholder="Localidad" required>
-                            <input type="text" name="calle" id="" placeholder="Calle" required>
-                            <input type="text" name="altura" id="" placeholder="altura" required>
-                            <input type="text" name="departamento" id="" placeholder="N° de departamento">
+                        <form action="" class="form-compra">
+                            <input type="text" id="nombre" name="nombre" placeholder="Titular de la tarjeta" required>
+                            <input type="text" id="tarjeta" name="tarjeta" placeholder="N° de tarjeta" required>
+                            <input type="date" id="vencimiento" name="vencimiento" placeholder="Fecha de caducidad" required> 
+                            <br>
+                            <input type="tel" id="codigo" name="codigo-seg" placeholder="Codigo de seguridad" required>
+                            <br>
+                            <input type="tel" id="tel" name="telefono" placeholder="Número de teléfono">
+                            <input type="text" id="localidad" name="localidad"  placeholder="Localidad" required>
+                            <input type="text" id="calle" name="calle" placeholder="Calle" required>
+                            <input type="text" id="altura" name="altura" placeholder="altura" required>
+                            <input type="text" id="depto" name="depto" placeholder="N° de departamento">
                         </form>
-
-
 
                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Comprar</button>
+                      <button type="button" class="btn btn-primary" onclick="guardar_datos()">Comprar</button>
                     </div>
                   </div>
                 </div>
