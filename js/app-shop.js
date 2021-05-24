@@ -119,9 +119,21 @@ function guardar_datos(){
 		$("#nombre").css({"border": "3px solid red"});
 	}
 
-	if(isNaN(datos.tel)){
-		$("#tel").css({"border": "3px solid red"});
+	function validar_tel(datos){
+		var phoneno = /^\d{10}$/;
+		if(datos['tel'].value.match(phoneno))
+	{
+		return true;
 	}
+	else
+	{
+		alert("Not a valid Phone Number");
+		return false;
+	}
+
+	}
+
+	validar_tel()
 };
 
 
