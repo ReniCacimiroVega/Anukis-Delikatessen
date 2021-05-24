@@ -75,7 +75,7 @@ function calcular_precio_carrito() {
 	$("#recibo").html( "<p style='font-size: 20px;' >El total a pagar de su orden es: " +total +"</p>");
 	$(".btn-modal-compra").fadeIn(1500);
 	return total;
-}
+};
 
 function iniciar_precio() { //U: Cuando cargas la pagina, carga las cantidades que teniamos guardadas
 	var carrito = leer_carrito();
@@ -113,20 +113,22 @@ function guardar_datos(){
 	if ((datos.nombre = "") || (datos.tarjeta = "") || (datos.vencimiento = "") || 
 	(datos.codigo = "") || (datos.tel = "") || (datos.localidad = "") || (datos.calle = "")
 	|| (datos.altura = "")){
-		alert("Complete todas las áreas"); 
-		if(datos.nombre.length < 8){
-			$("#nombre").css({"border": "3px solid red"});
-		} 
-		if( !(/^\d{9}$/.test(datos.tel))){
-			$("#tel").css({"border": "3px solid red"});
+		alert("Complete todas las áreas");}
 
-		};
+	if(datos.nombre.length < 8){
+		$("#nombre").css({"border": "3px solid red"});
 	}
+
+	if(isNaN(datos.tel)){
+		$("#tel").css({"border": "3px solid red"});
+	}
+};
 
 
 
 
 
 /** S: Programa **********************************************/
-// iniciar_precio();
-// $(".btn-modal-compra").hide();
+iniciar_precio();
+$(".btn-modal-compra").hide();
+	
