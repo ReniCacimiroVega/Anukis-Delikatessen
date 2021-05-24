@@ -72,13 +72,10 @@ function calcular_precio_carrito() {
 		}
 	}
 
-	$("#recibo").html( "<p style='font-size: 20px;' >El total a pagar de su orden es: </p>" + total);
-	// $(".btn-modal-compra").show();
+	$("#recibo").html( "<p style='font-size: 20px;' >El total a pagar de su orden es: " +total +"</p>");
+	$(".btn-modal-compra").fadeIn(1500);
 	return total;
 }
-
-
-
 
 function iniciar_precio() { //U: Cuando cargas la pagina, carga las cantidades que teniamos guardadas
 	var carrito = leer_carrito();
@@ -90,6 +87,46 @@ function iniciar_precio() { //U: Cuando cargas la pagina, carga las cantidades q
 	}
 }
 
-iniciar_precio();
 
-	
+
+
+/** S: Formulario de compra **********************************************/
+
+
+function guardar_datos(){
+	var datos = {};
+	datos.nombre = $("#nombre").val();
+	datos.tarjeta = $("#tarjeta").val();
+	datos.vencimiento = $("#vencimiento").val();
+	datos.codigo = $("#codigo").val();
+	datos.tel = $("#tel").val();
+	datos.localidad = $("#localidad").val();
+	datos.calle = $("#calle").val();
+	datos.altura = $("#altura").val();
+	datos.depto = $("#depto").val();
+
+	var info_cliente = JSON.parse(localStorage.getItem("info_cliente"));
+	if (!info_cliente){
+		info_cliente = [];
+	}
+
+	if ((datos.nombre = "") || (datos.tarjeta = "") || (datos.vencimiento = "") || 
+	(datos.codigo = "") || (datos.tel = "") || (datos.localidad = "") || (datos.calle = "")
+	|| (datos.altura = "")){
+		alert("Complete todas las áreas"); 
+		if(datos.nombre.length < 8){
+			$("#nombre").css({"border": "3px solid red"});
+		} 
+		if( !(/^\d{9}$/.test(datos.tel))){
+			$("#tel").css({"border": "3px solid red"});
+
+		};
+	}
+
+
+
+
+
+/** S: Programa **********************************************/
+// iniciar_precio();
+// $(".btn-modal-compra").hide();
